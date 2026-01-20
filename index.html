@@ -1,0 +1,2100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tactical Paintball Arena - Batu Malang</title>
+
+  <!-- SEO Basic -->
+  <meta name="description" content="Tactical Paintball Arena Batu Malang - arena paintball premium bertema luxury tactical. Paket fun game, corporate outbound, tournament pro. Booking via WhatsApp." />
+  <meta name="keywords" content="paintball batu, paintball malang, outbound batu, corporate outing, warzone arena, paintball hutan pinus" />
+  <meta name="author" content="Warzone Arena Batu" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tactical Paintball Arena - Batu Malang" />
+  <meta property="og:description" content="Rasakan adrenalin pertempuran taktis di hutan pinus Batu. Safety first, fun always. Booking sekarang." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1533577319985-5eb7257df73a?q=80&w=1600&auto=format&fit=crop" />
+  <meta property="og:locale" content="id_ID" />
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%23e65c00'/%3E%3Cstop offset='1' stop-color='%23ffb000'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='28' fill='%23121212'/%3E%3Cpath d='M32 10a22 22 0 1022 22A22 22 0 0032 10zm0 6a16 16 0 1016 16A16 16 0 0032 16z' fill='url(%23g)'/%3E%3Cpath d='M32 22a10 10 0 1010 10A10 10 0 0032 22z' fill='url(%23g)'/%3E%3C/svg%3E" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Fonts (REVISI: Judul=Open Sans, Subjudul=Montserrat, Isi=Poppins) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- AOS (Animate On Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Performance: preconnect -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <style>
+    :root {
+      /* WAJIB: Military Luxury Palette */
+      --primary-color: #3a4b2c; /* Dark Olive Green */
+      --secondary-color: #121212; /* Matte Black */
+      --accent-color: #e65c00; /* Neon Orange */
+      --accent-gold: #ffb000; /* Gold Accent (elegan) */
+      --light-bg: #f8f9fa;
+      --dark-bg: #1a1a1a;
+
+      /* Luxury UI tokens */
+      --glass: rgba(18, 18, 18, 0.55);
+      --glass-border: rgba(255, 255, 255, 0.12);
+      --soft-shadow: 0 18px 55px rgba(0, 0, 0, 0.22);
+      --soft-shadow-2: 0 10px 30px rgba(0, 0, 0, 0.12);
+      --radius: 16px;
+      --radius-lg: 22px;
+    }
+
+    /* =========================
+       (1) REVISI FONT SYSTEM
+       Judul: Open Sans | Subjudul: Montserrat | Isi: Poppins
+       ========================= */
+    body {
+      font-family: "Poppins", sans-serif; /* ISI */
+      color: #333;
+      overflow-x: hidden;
+      background-color: var(--light-bg);
+      background-image: url("img/IMG_8866_11zon_11zon.webp");
+    }
+
+    /* Judul utama & komponen judul */
+    h1, h2, h3, h4,
+    .navbar-brand, .btn,
+    .card-title, .accordion-button, .modal-title {
+      font-family: "Open Sans", sans-serif; /* JUDUL */
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    h2 { font-weight: 800; }
+
+    /* (REVISI) 1. Bold untuk h3 di semua section */
+    h3 { font-weight: 800; }
+
+    /* Subjudul / kicker */
+    h5, h6,
+    .hero-badge span,
+    .promo-badge span,
+    .stats-chip .lbl,
+    .text-muted.small,
+    footer h6,
+    .form-label,
+    .modal-footer {
+      font-family: "Montserrat", sans-serif; /* SUBJUDUL */
+      letter-spacing: 0.6px;
+      font-weight: 700; /* REVISI: SUBJUDUL BOLD */
+    }
+
+    /* Helper */
+    .text-accent { color: var(--accent-color) !important; }
+    .text-gold { color: var(--accent-gold) !important; }
+    .section-padding { padding: 100px 0; }
+
+    /* =========================
+       (3) REVISI: SECTION DIVIDER ELEGAN
+       ========================= */
+    .section-separated {
+      position: relative;
+    }
+    .section-separated::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(760px, 92%);
+      height: 1px;
+      background: linear-gradient(
+        90deg,
+        rgba(230,92,0,0.0),
+        rgba(230,92,0,0.55),
+        rgba(255,176,0,0.55),
+        rgba(230,92,0,0.0)
+      );
+      opacity: 0.95;
+      pointer-events: none;
+    }
+    /* Divider versi gelap (untuk section gelap) */
+    .section-separated.section-separated-dark::before{
+      background: linear-gradient(
+        90deg,
+        rgba(255,255,255,0.0),
+        rgba(255,176,0,0.45),
+        rgba(230,92,0,0.40),
+        rgba(255,255,255,0.0)
+      );
+      opacity: 0.85;
+    }
+
+    /* ====== Luxury micro-interactions ====== */
+    .pressable { transition: transform .25s ease, box-shadow .25s ease, filter .25s ease; }
+    .pressable:hover { transform: translateY(-6px); }
+    .pressable:active { transform: translateY(-2px) scale(.99); }
+
+    .click-ripple { position: relative; overflow: hidden; }
+    .ripple {
+      position: absolute;
+      border-radius: 999px;
+      transform: scale(0);
+      animation: ripple .65s ease-out;
+      background: rgba(255, 255, 255, 0.28);
+      pointer-events: none;
+      mix-blend-mode: overlay;
+    }
+    @keyframes ripple {
+      to { transform: scale(3.2); opacity: 0; }
+    }
+
+    /* (2) REVISI: efek muncul (highlight) pada bagian yang diklik / dituju */
+    .focus-ring {
+      animation: focusPulse 1.05s ease-out 1;
+      box-shadow: 0 0 0 0 rgba(230, 92, 0, 0.0);
+      border-radius: 14px;
+    }
+    @keyframes focusPulse {
+      0%   { box-shadow: 0 0 0 0 rgba(230, 92, 0, 0.0); transform: translateY(0); }
+      15%  { box-shadow: 0 0 0 10px rgba(230, 92, 0, 0.14); transform: translateY(-2px); }
+      55%  { box-shadow: 0 0 0 18px rgba(255, 176, 0, 0.10); }
+      100% { box-shadow: 0 0 0 0 rgba(230, 92, 0, 0.0); transform: translateY(0); }
+    }
+
+    /* Buttons */
+    .btn-paintball {
+      background: linear-gradient(45deg, var(--accent-color), #ff7b00);
+      color: white;
+      border: none;
+      padding: 12px 35px;
+      letter-spacing: 1.2px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 22px rgba(230, 92, 0, 0.25);
+      border-radius: 999px;
+      position: relative;
+    }
+    .btn-paintball::after {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      background: radial-gradient(260px 140px at 20% 0%, rgba(255,255,255,.22), transparent 60%);
+      opacity: .6;
+      pointer-events: none;
+      transition: opacity .25s ease;
+    }
+    .btn-paintball:hover {
+      background: linear-gradient(45deg, #ff7b00, var(--accent-color));
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 14px 30px rgba(230, 92, 0, 0.35);
+    }
+    .btn-paintball:hover::after { opacity: .85; }
+
+    .btn-outline-light:hover {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+
+    /* ====== Navbar (Sticky + Glassmorphism) ====== */
+    .navbar {
+      background: var(--glass);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding: 14px 0;
+      border-bottom: 1px solid var(--glass-border);
+      box-shadow: 0 14px 40px rgba(0,0,0,.15);
+    }
+    .navbar-brand {
+      font-size: 1.6rem;
+      color: var(--accent-color) !important;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+    .nav-link {
+      color: rgba(255, 255, 255, 0.82) !important;
+      margin-left: 15px;
+      font-size: 0.9rem;
+      letter-spacing: 1.3px;
+      font-weight: 600;
+      transition: 0.3s;
+      position: relative;
+      font-family: "Montserrat", sans-serif; /* subjudul/label navigasi */
+      text-transform: uppercase;
+    }
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 12px;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent-color), var(--accent-gold));
+      transition: width .25s ease;
+      opacity: .9;
+    }
+    .nav-link:hover::after, .nav-link.active::after { width: calc(100% - 24px); }
+    .nav-link:hover, .nav-link.active { color: #fff !important; }
+
+    .navbar-toggler { border-color: rgba(255,255,255,0.16); }
+    .navbar-toggler:focus { box-shadow: none; border-color: var(--accent-color); }
+    .navbar-toggler .fa-bars { color: #fff; }
+
+    /* Mobile collapse glass */
+    @media (max-width: 991.98px) {
+      .navbar .navbar-collapse {
+        margin-top: 12px;
+        background: rgba(18,18,18,.75);
+        border: 1px solid rgba(255,255,255,.10);
+        border-radius: 16px;
+        padding: 10px 12px;
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        box-shadow: var(--soft-shadow-2);
+      }
+      .nav-link { margin-left: 0; border-radius: 12px; padding: 10px 12px; }
+      .nav-link:hover { background: rgba(255,255,255,.06); }
+      .nav-link::after { display: none; }
+    }
+
+    /* ====== Hero (Luxury Tactical) ====== */
+    .hero {
+      background:
+        radial-gradient(900px 500px at 20% 10%, rgba(230,92,0,.20), transparent 60%),
+        radial-gradient(900px 500px at 90% 30%, rgba(58,75,44,.26), transparent 55%),
+        linear-gradient(to right, rgba(0,0,0,0.78), rgba(0,0,0,0.50)),
+        url("img/IMG_8867_11zon_11zon.webp"),
+        url("img/IMG_8867_11zon_11zon.webp");
+      background-size: cover, cover, cover, cover, cover;
+      background-position: center, center, center, center, center;
+      background-blend-mode: normal, normal, normal, overlay, normal;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      color: white;
+      padding-top: 88px;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 30% 20%, rgba(255,255,255,.08), transparent 40%),
+                        radial-gradient(circle at 80% 30%, rgba(255,255,255,.06), transparent 45%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .hero h1 {
+      font-size: 4.1rem;
+      line-height: 1.05;
+      margin-bottom: 22px;
+      font-weight: 800;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.55);
+    }
+    .hero .lead {
+      font-size: 1.25rem;
+      font-weight: 400;
+      text-shadow: 1px 1px 7px rgba(0,0,0,0.55);
+      opacity: 0.96;
+      max-width: 58ch;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(18,18,18,.55);
+      border: 1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.20);
+      margin-bottom: 18px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+    .hero-badge i { color: var(--accent-gold); }
+
+    .hero-panel {
+      background: rgba(18,18,18,.55);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--radius-lg);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: var(--soft-shadow);
+      overflow: hidden;
+    }
+    .hero-panel::before {
+      content:"";
+      position:absolute;
+      inset:0;
+      background: radial-gradient(460px 220px at 10% 0%, rgba(230,92,0,.14), transparent 60%),
+                  radial-gradient(420px 220px at 90% 10%, rgba(58,75,44,.18), transparent 55%);
+      pointer-events:none;
+      opacity:.85;
+    }
+    .hero-panel > * { position: relative; z-index: 1; }
+
+    .stats-chip {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 14px;
+      padding: 14px 14px;
+    }
+    .stats-chip .num { font-weight: 800; letter-spacing: 1px; font-family:"Open Sans",sans-serif; }
+    .stats-chip .lbl { color: rgba(255,255,255,.70); font-size: .85rem; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.8rem; }
+      .hero { text-align: center; }
+      .hero .btn { width: 100%; margin-bottom: 10px; }
+    }
+
+    /* =========================
+       (2) REVISI: TUNING RESPONSIVE (SAMSUNG GALAXY S8+ ~ 360px)
+       ========================= */
+    @media (max-width: 420px) {
+      .section-padding { padding: 78px 0; }
+      .navbar-brand { font-size: 1.25rem; letter-spacing: 1.6px; }
+      .hero { padding-top: 86px; }
+      .hero h1 { font-size: 2.35rem; line-height: 1.08; }
+      .hero .lead { font-size: 1.05rem; }
+      .hero-badge { width: 100%; justify-content: center; }
+      .hero-panel { border-radius: 18px; }
+      .btn-paintball { padding: 12px 22px; }
+      .about-img { height: 360px; }
+      .gallery-item { height: 240px; }
+      .card-img-top { height: 210px; }
+      .floating-btn { width: 54px; height: 54px; right: 14px; bottom: 14px; }
+      .floating-top { bottom: 82px; }
+    }
+
+    /* About Image */
+    .about-img {
+      border-radius: var(--radius-lg);
+      box-shadow: var(--soft-shadow);
+      transition: 0.3s;
+      object-fit: cover;
+      height: 500px;
+    }
+    .about-img:hover { transform: scale(1.02); }
+
+    .about-mini {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,.06);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+      height: 140px;
+      background: #fff;
+    }
+    .about-mini img{ width:100%; height:100%; object-fit: cover; }
+
+    /* Service Cards */
+    .service-card {
+      border: 1px solid rgba(0,0,0,0.04);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 14px 35px rgba(0,0,0,0.06);
+      padding: 40px 30px;
+      height: 100%;
+      border-radius: var(--radius-lg);
+      border-bottom: 3px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background: radial-gradient(320px 180px at 10% 0%, rgba(230,92,0,.10), transparent 60%),
+                  radial-gradient(320px 180px at 90% 10%, rgba(58,75,44,.10), transparent 55%);
+      opacity:.75;
+      pointer-events:none;
+      transition: opacity .25s ease;
+    }
+    .service-card > * { position: relative; z-index: 1; }
+    .service-card:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 25px 55px rgba(58, 75, 44, 0.16);
+      border-bottom: 3px solid var(--accent-color);
+    }
+    .service-card:hover::after{ opacity: 1; }
+    .service-icon {
+      font-size: 3.5rem;
+      color: var(--primary-color);
+      margin-bottom: 25px;
+      transition: 0.3s;
+    }
+    .service-card:hover .service-icon {
+      color: var(--accent-color);
+      transform: scale(1.1);
+    }
+
+    /* CTA */
+    .cta-section {
+      background:
+        radial-gradient(900px 500px at 20% 10%, rgba(255,176,0,.18), transparent 60%),
+        linear-gradient(rgba(58, 75, 44, 0.88), rgba(58, 75, 44, 0.88)),
+        url("img/IMG_8895_11zon_11zon.webp");
+      background-size: cover;
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background: linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.18));
+      pointer-events:none;
+    }
+    .cta-section .container{ position: relative; z-index: 1; }
+
+    /* (1) REVISI: Promo showcase section (hidden by default, tampil saat klik) */
+    .promo-showcase {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(0,0,0,.06);
+      box-shadow: var(--soft-shadow-2);
+      background:
+        radial-gradient(900px 420px at 10% 0%, rgba(230,92,0,.18), transparent 60%),
+        radial-gradient(900px 420px at 90% 10%, rgba(255,176,0,.12), transparent 55%),
+        linear-gradient(135deg, rgba(18,18,18,.92), rgba(18,18,18,.72)),
+        url("img/IMG_8895_11zon_11zon.webp");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 34px;
+    }
+    .promo-showcase::before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background: radial-gradient(480px 240px at 20% 0%, rgba(255,255,255,.12), transparent 60%);
+      opacity:.8;
+      pointer-events:none;
+    }
+    .promo-showcase > *{ position: relative; z-index: 1; }
+    .promo-badge {
+      display: inline-flex;
+      align-items:center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.14);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      letter-spacing: 1.2px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .promo-card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 16px;
+      padding: 18px;
+    }
+    .promo-card i { color: var(--accent-gold); }
+    .promo-divider {
+      height: 1px;
+      background: linear-gradient(90deg, rgba(230,92,0,.0), rgba(230,92,0,.65), rgba(255,176,0,.65), rgba(230,92,0,.0));
+      margin: 18px 0;
+      opacity: .85;
+    }
+
+    .cta-secondary {
+      background-color: var(--secondary-color);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-secondary::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; width: 5px; height: 100%;
+      background: linear-gradient(180deg, var(--accent-color), var(--accent-gold));
+    }
+    .cta-secondary::after {
+      content:"";
+      position:absolute;
+      inset:0;
+      background: radial-gradient(700px 320px at 15% 0%, rgba(230,92,0,.14), transparent 60%),
+                  radial-gradient(700px 320px at 85% 10%, rgba(255,176,0,.12), transparent 55%);
+      pointer-events:none;
+      opacity:.9;
+    }
+    .cta-secondary .container{ position: relative; z-index: 1; }
+
+    /* General Card */
+    .card {
+      border: none;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+      transition: all 0.3s ease;
+      background: #fff;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 22px 44px rgba(0,0,0,0.10);
+    }
+    .card-img-top {
+      height: 250px;
+      object-fit: cover;
+      transition: 0.5s;
+    }
+    .card:hover .card-img-top { transform: scale(1.05); }
+    .card-body { padding: 1.5rem; }
+
+    /* (REVISI) 2. Pro Shop: efek card seperti Paket & Layanan (khusus #products) */
+    #products .card{
+      border: 1px solid rgba(0,0,0,0.04);
+      background: rgba(255,255,255,0.88);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 14px 35px rgba(0,0,0,0.06);
+      border-bottom: 3px solid transparent;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    #products .card::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background: radial-gradient(320px 180px at 10% 0%, rgba(230,92,0,.10), transparent 60%),
+                  radial-gradient(320px 180px at 90% 10%, rgba(58,75,44,.10), transparent 55%);
+      opacity:.72;
+      pointer-events:none;
+      transition: opacity .25s ease;
+      z-index: 0;
+    }
+    #products .card > *{ position: relative; z-index: 1; }
+    #products .card:hover{
+      transform: translateY(-15px);
+      box-shadow: 0 25px 55px rgba(58, 75, 44, 0.16);
+      border-bottom-color: var(--accent-color);
+    }
+    #products .card:hover::after{ opacity: 1; }
+    #products .card .btn-outline-dark{
+      transition: all .25s ease;
+    }
+    #products .card:hover .btn-outline-dark{
+      background: var(--accent-color);
+      border-color: var(--accent-color);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    /* Gallery */
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 18px;
+      cursor: pointer;
+      box-shadow: 0 10px 26px rgba(0,0,0,0.14);
+      height: 300px;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border: 1px solid rgba(0,0,0,.06);
+      background: #fff;
+    }
+    .gallery-item::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background: radial-gradient(280px 160px at 20% 10%, rgba(255,176,0,.18), transparent 60%),
+                  radial-gradient(280px 160px at 90% 20%, rgba(230,92,0,.12), transparent 55%);
+      opacity:.0;
+      transition: opacity .35s ease;
+      pointer-events:none;
+      z-index: 1;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.55s ease;
+      filter: saturate(1.05) contrast(1.03);
+    }
+    .gallery-overlay {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: linear-gradient(to top, rgba(230, 92, 0, 0.75), rgba(58, 75, 44, 0.55));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      backdrop-filter: blur(2px);
+      transition: all 0.4s ease;
+      z-index: 2;
+    }
+    .gallery-icon {
+      color: white;
+      font-size: 3rem;
+      transform: scale(0);
+      transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .gallery-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 22px 50px rgba(0,0,0,0.18);
+      border-color: rgba(230,92,0,.35);
+    }
+    .gallery-item:hover::before { opacity: 1; }
+    .gallery-item:hover img { transform: scale(1.18); }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-item:hover .gallery-icon { transform: scale(1); }
+
+    /* Pagination */
+    .pagination .page-link {
+      color: var(--primary-color);
+      border: none;
+      margin: 0 5px;
+      border-radius: 50%;
+      width: 40px; height: 40px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+      transition: 0.3s;
+      background: rgba(255,255,255,.95);
+      font-family: "Montserrat", sans-serif;
+    }
+    .pagination .page-link:hover {
+      background-color: var(--accent-color);
+      color: white;
+      transform: translateY(-2px);
+    }
+    .pagination .page-item.active .page-link {
+      background-color: var(--primary-color);
+      box-shadow: 0 10px 22px rgba(58, 75, 44, 0.25);
+      color: white;
+    }
+
+    /* Testimonial */
+    .testimonial-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 5px solid rgba(230, 92, 0, 0.20);
+      padding: 3px;
+      background: white;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+    }
+    .carousel-item p.lead { font-size: 1.2rem; color: #555; }
+
+    /* FAQ */
+    .accordion-item {
+      border: none;
+      margin-bottom: 15px;
+      border-radius: 12px !important;
+      overflow: hidden;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+    }
+    .accordion-button {
+      font-size: 1.1rem;
+      font-weight: 800;
+      padding: 20px 25px;
+      background-color: white;
+      color: var(--primary-color);
+    }
+    .accordion-button:not(.collapsed) {
+      background: linear-gradient(90deg, var(--primary-color), #2c3822);
+      color: white;
+      box-shadow: none;
+    }
+    .accordion-button:focus { box-shadow: none; }
+    .accordion-body { padding: 25px; line-height: 1.7; }
+
+    /* Forms */
+    .form-control {
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #eee;
+      background-color: #f9f9f9;
+    }
+    .form-control:focus {
+      box-shadow: none;
+      border-color: var(--accent-color);
+      background-color: white;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--secondary-color);
+      color: #bbb;
+      padding-top: 80px;
+      padding-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+    footer::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 360px at 20% 0%, rgba(230,92,0,.12), transparent 60%),
+        radial-gradient(800px 360px at 85% 10%, rgba(255,176,0,.10), transparent 55%);
+      pointer-events:none;
+      opacity:.95;
+    }
+    footer .container{ position: relative; z-index: 1; }
+    footer h5 {
+      color: white;
+      margin-bottom: 25px;
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    footer h5::after {
+      content: "";
+      position: absolute;
+      left: 0; bottom: 0;
+      width: 50px; height: 2px;
+      background: linear-gradient(90deg, var(--accent-color), var(--accent-gold));
+    }
+    footer ul { padding-left: 0; list-style: none; }
+    footer ul li { margin-bottom: 15px; }
+    footer a { color: #bbb; text-decoration: none; transition: 0.3s; font-weight: 500; }
+    footer a:hover { color: var(--accent-color); padding-left: 5px; }
+    .social-links a {
+      display: inline-flex;
+      align-items: center; justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,0.08);
+      color: white;
+      border-radius: 50%;
+      margin-right: 10px;
+      transition: 0.3s;
+      border: 1px solid rgba(255,255,255,.10);
+    }
+    .social-links a:hover {
+      background: var(--accent-color);
+      transform: translateY(-3px);
+    }
+    hr.border-secondary { border-color: rgba(255,255,255,0.1) !important; }
+
+    /* Modal Image Styling */
+    #galleryModal .modal-content { background-color: transparent; border: none; }
+    #galleryModal .modal-body {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #galleryModal img {
+      max-width: 100%;
+      max-height: 90vh;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+    #galleryModal .btn-close {
+      position: absolute;
+      top: -30px;
+      right: 0;
+      background-color: white;
+      opacity: 1;
+      border-radius: 50%;
+      padding: 10px;
+      z-index: 1056;
+    }
+
+    /* ===== Floating WA + Top ===== */
+    .floating-btn {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 56px;
+      height: 56px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      border-radius: 999px;
+      box-shadow: 0 16px 40px rgba(0,0,0,.25);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .floating-top {
+      bottom: 86px;
+      background: rgba(18,18,18,.75);
+      color: #fff;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .floating-top:hover { filter: brightness(1.06); }
+
+    /* Reduce motion */
+    @media (prefers-reduced-motion: reduce) {
+      * { scroll-behavior: auto !important; }
+      .pressable, .card, .gallery-item, .btn-paintball { transition: none !important; }
+      .focus-ring{ animation: none !important; }
+    }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80">
+
+  <!-- 1) Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fas fa-crosshairs me-2"></i> WARZONE ARENA</a>
+
+      <button class="navbar-toggler click-ripple" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fas fa-bars"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a href="#contact" class="btn btn-paintball btn-sm rounded-pill w-100 px-4 py-2 click-ripple">Booking Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2) Hero -->
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7" data-aos="fade-up">
+          <div class="hero-badge">
+            <i class="fas fa-shield-alt"></i>
+            <span>Luxury Tactical • Safety First • Batu Malang</span>
+          </div>
+
+          <span class="text-gold fw-bold h6 mb-3 d-block">ARENA PAINTBALL #1 DI BATU MALANG</span>
+          <h1>Rasakan Adrenalin Pertempuran Taktis di Hutan Pinus</h1>
+          <p class="lead mb-4">
+            Bergabunglah dalam aksi seru dengan peralatan standar internasional, skenario misi menantang, dan arena alami yang memacu adrenalin Anda.
+          </p>
+
+          <div class="d-grid gap-3 d-md-block mb-4">
+            <a href="#services" class="btn btn-paintball btn-lg me-md-3 mb-3 mb-md-0 click-ripple">Lihat Paket Misi</a>
+            <a href="#video" class="btn btn-outline-light btn-lg click-ripple">Tonton Aksi <i class="fas fa-play ms-2"></i></a>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="50">
+              <div class="stats-chip">
+                <div class="num">500+</div>
+                <div class="lbl">Event</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="stats-chip">
+                <div class="num">10K+</div>
+                <div class="lbl">Pemain</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="150">
+              <div class="stats-chip">
+                <div class="num">3</div>
+                <div class="lbl">Zona Arena</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="stats-chip">
+                <div class="num">4.9★</div>
+                <div class="lbl">Rating</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero right panel -->
+        <div class="col-lg-5" data-aos="fade-left">
+          <div class="p-4 p-lg-4 hero-panel position-relative">
+            <h4 class="mb-2">Briefing Cepat</h4>
+            <p class="text-white-50 mb-3">
+              Datang, briefing, pakai gear, lalu tempur. Tim marshal akan memastikan SOP berjalan dengan aman.
+            </p>
+            <ul class="list-unstyled text-white-50 small mb-0">
+              <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Masker full-face standar tinggi</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Skenario misi & leaderboard</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Lokasi sejuk & fotogenik</li>
+              <li class="mb-0"><i class="fas fa-check-circle text-gold me-2"></i> Paket untuk pemula sampai pro</li>
+            </ul>
+            <div class="mt-4 d-grid">
+              <a href="#contact" class="btn btn-paintball btn-lg click-ripple"><i class="fab fa-whatsapp me-2"></i> Tanya Jadwal via WA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3) About Us -->
+  <section id="about" class="section-padding bg-white section-separated">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="zoom-in">
+          <img loading="lazy" src="img/IMG_8895_11zon_11zon.webp" class="img-fluid about-img w-100" alt="Tim Warzone Arena Briefing" />
+        </div>
+        <div class="col-lg-6 ps-lg-5" data-aos="fade-up">
+          <h5 class="text-accent">Tentang Warzone Arena</h5>
+          <h2 class="mb-4 display-6">Pengalaman Tempur Aman & Profesional Sejak 2018</h2>
+          <p class="lead text-muted mb-4">
+            Kami menghadirkan simulasi pertempuran paling realistis di Batu, Malang. Prioritas utama kami adalah keselamatan (safety first) tanpa mengurangi intensitas permainan.
+          </p>
+
+          <div class="row g-3 mb-4">
+            <div class="col-6">
+              <div class="about-mini pressable">
+                <img loading="lazy" src="img/IMG_8883_11zon_11zon.webp" alt="Outbound Team Building" />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="about-mini pressable">
+                <img loading="lazy" src="img/IMG_8867_11zon_11zon.webp" alt="Briefing & Safety Gear" />
+              </div>
+            </div>
+          </div>
+
+          <p>
+            Berlokasi di tengah kesejukan hutan pinus Batu, arena kami dirancang untuk berbagai skenario taktis, mulai dari perebutan benteng hingga misi penyelamatan sandera. Didukung oleh instruktur bersertifikat dan peralatan yang selalu terawat.
+          </p>
+          <ul class="list-unstyled mt-4">
+            <li class="mb-3 d-flex align-items-center"><i class="fas fa-check-circle fa-lg text-accent me-3"></i> Instruktur & Marshal Bersertifikat</li>
+            <li class="mb-3 d-flex align-items-center"><i class="fas fa-shield-alt fa-lg text-accent me-3"></i> Peralatan Standar Keamanan Tinggi</li>
+            <li class="mb-3 d-flex align-items-center"><i class="fas fa-tree fa-lg text-accent me-3"></i> 3 Zona Arena Hutan Alami</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4) Services -->
+  <section id="services" class="section-padding section-separated" style="background-color: #f0f2f5;">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h5 class="text-accent">Paket & Layanan</h5>
+        <h2 class="display-5">Pilih Skenario Misi Anda</h2>
+        <p class="text-muted">Paket dirancang untuk berbagai kebutuhan, dari pemula hingga pro.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+          <div class="service-card text-center pressable">
+            <i class="fas fa-users service-icon"></i>
+            <h4>Fun Game Group</h4>
+            <p class="text-muted my-4">Cocok untuk pemula, arisan, atau kumpul teman. Durasi 2 jam permainan santai namun seru.</p>
+            <ul class="list-unstyled text-start d-inline-block mx-auto mb-4 text-muted small">
+              <li><i class="fas fa-check text-accent me-2"></i> Min. 6 Pax</li>
+              <li><i class="fas fa-check text-accent me-2"></i> 50 Peluru/Org</li>
+              <li><i class="fas fa-check text-accent me-2"></i> Full Gear & Dokumentasi</li>
+            </ul>
+
+            <button type="button" class="btn text-accent text-decoration-none fw-bold click-ripple"
+              data-bs-toggle="modal" data-bs-target="#orderModal" data-package="Fun Game Group">
+              Detail Paket <i class="fas fa-arrow-right ms-2"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card text-center pressable">
+            <i class="fas fa-building service-icon"></i>
+            <h4>Corporate Outbound</h4>
+            <p class="text-muted my-4">Paket lengkap untuk perusahaan. Fokus pada team building, kepemimpinan, dan komunikasi.</p>
+            <ul class="list-unstyled text-start d-inline-block mx-auto mb-4 text-muted small">
+              <li><i class="fas fa-check text-accent me-2"></i> Min. 20 Pax</li>
+              <li><i class="fas fa-check text-accent me-2"></i> Skenario Khusus</li>
+              <li><i class="fas fa-check text-accent me-2"></i> Snack + Makan Siang + Aula</li>
+            </ul>
+
+            <button type="button" class="btn text-accent text-decoration-none fw-bold click-ripple"
+              data-bs-toggle="modal" data-bs-target="#orderModal" data-package="Corporate Outbound">
+              Detail Paket <i class="fas fa-arrow-right ms-2"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mx-auto" data-aos="fade-up" data-aos-delay="150">
+          <div class="service-card text-center pressable">
+            <i class="fas fa-trophy service-icon"></i>
+            <h4>Tournament Pro</h4>
+            <p class="text-muted my-4">Untuk tim profesional atau komunitas. Sewa lapangan full day dengan aturan kompetisi internasional.</p>
+            <ul class="list-unstyled text-start d-inline-block mx-auto mb-4 text-muted small">
+              <li><i class="fas fa-check text-accent me-2"></i> Full Day Access</li>
+              <li><i class="fas fa-check text-accent me-2"></i> Marshal Berlisensi</li>
+              <li><i class="fas fa-check text-accent me-2"></i> Air Refill Unlimited</li>
+            </ul>
+
+            <button type="button" class="btn text-accent text-decoration-none fw-bold click-ripple"
+              data-bs-toggle="modal" data-bs-target="#orderModal" data-package="Tournament Pro">
+              Detail Paket <i class="fas fa-arrow-right ms-2"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5) CTA Primer -->
+  <section class="cta-section section-padding section-separated section-separated-dark">
+    <div class="container" data-aos="zoom-in">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="display-5 mb-3">Diskon 20% Untuk Pelajar & Mahasiswa!</h2>
+          <p class="lead mb-4">Tunjukkan kartu identitas pelajar/mahasiswa aktif Anda saat registrasi di lokasi dan dapatkan harga khusus untuk paket Fun Game.</p>
+          <a href="#promo" class="btn btn-paintball btn-lg text-uppercase click-ripple" id="btnClaimPromo">Klaim Promo Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Showcase -->
+  <section id="promo" class="section-padding bg-white section-separated" style="display:none;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10" data-aos="fade-up">
+          <div class="promo-showcase pressable">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3">
+              <div>
+                <div class="promo-badge mb-3">
+                  <i class="fas fa-bolt"></i>
+                  <span>PROMO AKTIF • PELAJAR & MAHASISWA • 2026</span>
+                </div>
+                <h2 class="display-5 mb-2">Diskon 20% Fun Game</h2>
+                <p class="text-white-50 mb-0" style="max-width: 70ch;">
+                  Klaim promo ini untuk main bareng teman kampus/sekolah. Berlaku setiap hari (sesuai slot), dengan SOP safety lengkap & marshal pendamping.
+                </p>
+              </div>
+              <div class="text-md-end">
+                <div class="h6 text-white-50 mb-1">Kode Promo</div>
+                <div class="display-6 mb-2" style="letter-spacing: 3px; font-weight: 800; font-family:'Open Sans',sans-serif;">
+                  WZ-STUDENT
+                </div>
+
+                <!-- REVISI (PERINTAH 1): "Gunakan Promo" buka modal pemesanan + isi paket Fun Game Group + Kode Promo -->
+                <button type="button"
+                        class="btn btn-paintball btn-lg click-ripple"
+                        id="btnUsePromo"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderModal"
+                        data-package="Fun Game Group + Kode Promo"
+                        aria-label="Gunakan Promo dan buka form pemesanan">
+                  <i class="fas fa-ticket-alt me-2"></i> Gunakan Promo
+                </button>
+              </div>
+            </div>
+
+            <div class="promo-divider"></div>
+
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="promo-card h-100">
+                  <div class="d-flex gap-3">
+                    <i class="fas fa-id-card fa-2x"></i>
+                    <div>
+                      <h5 class="mb-1">Syarat</h5>
+                      <div class="text-white-50 small">
+                        Tunjukkan Kartu Pelajar/Mahasiswa aktif saat registrasi.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="promo-card h-100">
+                  <div class="d-flex gap-3">
+                    <i class="fas fa-shield-alt fa-2x"></i>
+                    <div>
+                      <h5 class="mb-1">Include</h5>
+                      <div class="text-white-50 small">
+                        Full gear, briefing safety, game mode, dan dokumentasi dasar.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="promo-card h-100">
+                  <div class="d-flex gap-3">
+                    <i class="fas fa-clock fa-2x"></i>
+                    <div>
+                      <h5 class="mb-1">Durasi</h5>
+                      <div class="text-white-50 small">
+                        ± 2 jam (briefing + beberapa round). Peluru sesuai paket.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 text-white-50 small">
+              <strong class="text-gold">Tips:</strong> Booking H-3 untuk weekend. Promo tidak bisa digabung dengan promo lain.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6) Produk -->
+  <section id="products" class="section-padding bg-white section-separated">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h5 class="text-accent">Pro Shop</h5>
+        <h2>Gear & Merchandise Upgrade</h2>
+        <p class="text-muted">Tingkatkan performa Anda dengan perlengkapan premium.</p>
+      </div>
+
+      <div class="row mb-4" data-aos="fade-up" data-aos-delay="50">
+        <div class="col-12">
+          <div class="about-mini pressable" style="height: 220px; border-radius: var(--radius-lg);">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1605979399824-18e6a10f8f3d?q=80&w=1600&auto=format&fit=crop" alt="Pro Shop Paintball Gear" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-6 col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="80">
+          <div class="card h-100 pressable">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1522502781491-1262d0df545b?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Tactical Mask" />
+            <div class="card-body text-center">
+              <h5 class="card-title h6">Pro Tactical Mask Thermal</h5>
+              <p class="card-text text-accent fw-bold fs-5" style="font-family:'Open Sans',sans-serif;">Rp 850.000</p>
+
+              <!-- REVISI (PERINTAH): tombol aktif buka popup detail -->
+              <button type="button"
+                      class="btn btn-outline-dark btn-sm w-100 mt-2 click-ripple"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productModal"
+                      data-product="mask">
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="120">
+          <div class="card h-100 pressable">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1594951471018-8d38dd965257?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Team Jersey" />
+            <div class="card-body text-center">
+              <h5 class="card-title h6">Custom Team Jersey (Camo)</h5>
+              <p class="card-text text-accent fw-bold fs-5" style="font-family:'Open Sans',sans-serif;">Rp 250.000</p>
+
+              <!-- REVISI (PERINTAH): tombol aktif buka popup detail -->
+              <button type="button"
+                      class="btn btn-outline-dark btn-sm w-100 mt-2 click-ripple"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productModal"
+                      data-product="jersey">
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="160">
+          <div class="card h-100 pressable">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1616167882582-721db597d264?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Tactical Glove" />
+            <div class="card-body text-center">
+              <h5 class="card-title h6">Armored Half-Finger Glove</h5>
+              <p class="card-text text-accent fw-bold fs-5" style="font-family:'Open Sans',sans-serif;">Rp 125.000</p>
+
+              <!-- REVISI (PERINTAH): tombol aktif buka popup detail -->
+              <button type="button"
+                      class="btn btn-outline-dark btn-sm w-100 mt-2 click-ripple"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productModal"
+                      data-product="glove">
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 pressable">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1555547432-d67067d740eb?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Smoke Grenade" />
+            <div class="card-body text-center">
+              <h5 class="card-title h6">Tactical Smoke Grenade</h5>
+              <p class="card-text text-accent fw-bold fs-5" style="font-family:'Open Sans',sans-serif;">Rp 150.000</p>
+
+              <!-- REVISI (PERINTAH): tombol aktif buka popup detail -->
+              <button type="button"
+                      class="btn btn-outline-dark btn-sm w-100 mt-2 click-ripple"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productModal"
+                      data-product="smoke">
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7) Galeri -->
+  <section id="gallery" class="section-padding section-separated" style="background-color: #f0f2f5;">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h5 class="text-accent">Portofolio</h5>
+        <h2>Galeri Medan Tempur</h2>
+        <p class="text-muted">Intip keseruan dan atmosfer arena kami di Batu.</p>
+      </div>
+
+      <div id="galleryGrid" class="row g-3"></div>
+
+      <div class="d-flex justify-content-between align-items-center mt-5 pt-2">
+        <button id="galleryPrev" class="btn btn-outline-dark rounded-pill px-4 click-ripple" type="button">
+          <i class="fas fa-chevron-left me-2"></i> Sebelumnya
+        </button>
+        <div class="text-muted small">
+          Halaman <strong id="galleryPage">1</strong> / <strong id="galleryTotal">1</strong>
+        </div>
+        <button id="galleryNext" class="btn btn-outline-dark rounded-pill px-4 click-ripple" type="button">
+          Selanjutnya <i class="fas fa-chevron-right ms-2"></i>
+        </button>
+      </div>
+
+      <nav aria-label="Gallery pagination" class="mt-4">
+        <ul id="galleryDots" class="pagination justify-content-center"></ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- 8) Testimonial -->
+  <section id="testimonial" class="section-padding bg-white section-separated">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h5 class="text-accent">Review Pelanggan</h5>
+        <h2>Apa Kata Mereka?</h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9" data-aos="fade-up" data-aos-delay="80">
+          <div id="carouselTestimonial" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+
+              <div class="carousel-item active p-4">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=240&auto=format&fit=crop" class="rounded-circle testimonial-img" alt="Budi Santoso" />
+                <h5 class="mb-1 mt-3 h4">Budi Santoso</h5>
+                <p class="text-muted fw-bold">HR Manager, PT Teknologi Maju</p>
+                <p class="lead fst-italic mt-4 text-dark">
+                  "Luar biasa! Kami mengadakan corporate gathering di sini. Fasilitas lengkap, makan siangnya enak, dan instruktur sangat profesional mengatur 50 orang karyawan kami."
+                </p>
+                <div class="text-warning mt-3 fs-5">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+              </div>
+
+              <div class="carousel-item p-4">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=240&auto=format&fit=crop" class="rounded-circle testimonial-img" alt="Siti Aminah" />
+                <h5 class="mb-1 mt-3 h4">Siti Aminah</h5>
+                <p class="text-muted fw-bold">Mahasiswi Universitas Brawijaya</p>
+                <p class="lead fst-italic mt-4 text-dark">
+                  "Seru banget main sama teman-teman kampus di sini. Arenanya menantang karena di tengah hutan pinus beneran. Toiletnya bersih dan ramah untuk pemula."
+                </p>
+                <div class="text-warning mt-3 fs-5">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+
+              <div class="carousel-item p-4">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=240&auto=format&fit=crop" class="rounded-circle testimonial-img" alt="Rangga Pratama" />
+                <h5 class="mb-1 mt-3 h4">Rangga Pratama</h5>
+                <p class="text-muted fw-bold">Komunitas Paintball Malang</p>
+                <p class="lead fst-italic mt-4 text-dark">
+                  "Arena woodsball-nya terasa premium. Briefing jelas, aturan disiplin, dan game mode-nya bikin semua pemain aktif. Cocok untuk latihan dan sparring komunitas."
+                </p>
+                <div class="text-warning mt-3 fs-5">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+              </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonial" data-bs-slide="prev" aria-label="Prev testimonial">
+              <span class="carousel-control-prev-icon rounded-circle p-3" aria-hidden="true" style="background-color: var(--primary-color) !important"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonial" data-bs-slide="next" aria-label="Next testimonial">
+              <span class="carousel-control-next-icon rounded-circle p-3" aria-hidden="true" style="background-color: var(--primary-color) !important"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9) FAQ -->
+  <section id="faq" class="section-padding section-separated" style="background-color: #f0f2f5;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8" data-aos="fade-up">
+          <div class="text-center mb-5">
+            <h5 class="text-accent">Informasi Umum</h5>
+            <h2>Pertanyaan Sering Diajukan (FAQ)</h2>
+          </div>
+          <div class="accordion" id="accordionFAQ">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button click-ripple" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  Apakah sakit jika terkena tembakan peluru cat?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  Rasanya sedikit menyengat, mirip seperti dijentik karet gelang. Namun jangan khawatir, kami menyediakan rompi pelindung dada (body vest) tebal dan masker full-face standar keamanan tinggi untuk meminimalisir dampak dan memastikan keamanan area vital Anda.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed click-ripple" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Berapa jumlah minimal dan maksimal peserta?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  Untuk permainan yang seru, kami menyarankan minimal 6 orang (3 vs 3). Untuk grup besar seperti corporate gathering, kami dapat menampung hingga 120 peserta dalam satu sesi event dengan sistem turnamen atau rotasi.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed click-ripple" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Apa saja yang perlu kami bawa?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  Kami sudah menyediakan seragam militer, gear lengkap, dan air mineral. Anda <strong>sangat disarankan</strong> membawa: baju ganti untuk pulang, sepatu olahraga/outdoor yang nyaman, dan perlengkapan mandi jika ingin bilas setelah bermain.
+                </div>
+              </div>
+            </div>
+          </div><!-- /accordion -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10) CTA Sekunder -->
+  <section class="section-padding cta-secondary section-separated section-separated-dark">
+    <div class="container text-center relative z-1" data-aos="zoom-in">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="display-5 mb-3">Slot Weekend Cepat Terisi!</h2>
+          <p class="lead mb-5 text-white-50">Jangan biarkan tim Anda menunggu. Amankan jadwal pertempuran Anda sekarang juga. Kami sarankan booking minimal H-3.</p>
+
+          <!-- REVISI (PERINTAH 2): isi link wa.me agar aktif -->
+          <a href="https://wa.me/6281234567890?text=Halo%20Warzone%20Arena!%20Saya%20ingin%20reservasi%20slot%20weekend." class="btn btn-paintball btn-lg px-5 click-ripple">
+            <i class="fab fa-whatsapp me-2"></i> Reservasi via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11) Blog -->
+  <section id="blog" class="section-padding bg-white section-separated">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h5 class="text-accent">Blog & Artikel</h5>
+        <h2>Tips Taktis & Berita Arena</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+          <div class="card h-100 pressable">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1544264639-66c3d97f26d2?q=80&w=900&auto=format&fit=crop" class="card-img-top" alt="Tips Strategi" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between text-muted small mb-3">
+                <span><i class="far fa-calendar-alt me-2"></i>12 Jan 2026</span>
+                <span><i class="far fa-user me-2"></i>Admin</span>
+              </div>
+              <h5 class="card-title h4 mt-2">
+                <a href="artikel-detail-2.html#artikel-1" class="text-dark text-decoration-none">5 Strategi Menang Paintball di Arena Hutan</a>
+              </h5>
+              <p class="card-text text-muted">Pelajari formasi flank (menyergap dari samping) dan pentingnya komunikasi 'covering fire' untuk mendominasi tim lawan di area banyak pohon...</p>
+            </div>
+            <div class="card-footer bg-white border-0 pb-4 ps-4">
+              <a href="artikel-detail-2.html#artikel-1" class="text-accent text-decoration-none fw-bold ls-1 click-ripple">BACA SELENGKAPNYA <i class="fas fa-arrow-right ms-2 small"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 pressable">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?q=80&w=900&auto=format&fit=crop" class="card-img-top" alt="Event Turnamen" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between text-muted small mb-3">
+                <span><i class="far fa-calendar-alt me-2"></i>05 Jan 2026</span>
+                <span><i class="far fa-user me-2"></i>Event Ops</span>
+              </div>
+              <h5 class="card-title h4 mt-2">
+                <a href="artikel-detail-2.html#artikel-2" class="text-dark text-decoration-none">Recap Turnamen 'Battle of Batu 2026'</a>
+              </h5>
+              <p class="card-text text-muted">Lihat keseruan dan highlights dari 32 tim profesional yang memperebutkan total hadiah 50 Juta Rupiah di arena utama kami...</p>
+            </div>
+            <div class="card-footer bg-white border-0 pb-4 ps-4">
+              <a href="artikel-detail-2.html#artikel-2" class="text-accent text-decoration-none fw-bold ls-1 click-ripple">BACA SELENGKAPNYA <i class="fas fa-arrow-right ms-2 small"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mx-auto" data-aos="fade-up" data-aos-delay="150">
+          <div class="card h-100 pressable">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1517487227443-4cb50325b34a?q=80&w=900&auto=format&fit=crop" class="card-img-top" alt="Safety Guide" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between text-muted small mb-3">
+                <span><i class="far fa-calendar-alt me-2"></i>28 Feb 2026</span>
+                <span><i class="far fa-user me-2"></i>Safety Officer</span>
+              </div>
+              <h5 class="card-title h4 mt-2">
+                <a href="artikel-detail-2.html#artikel-3" class="text-dark text-decoration-none">Aturan Emas: Jangan Pernah Lepas Masker!</a>
+              </h5>
+              <p class="card-text text-muted">Panduan keselamatan terpenting di arena paintball. Mengapa melepas goggle, meskipun berembun, adalah kesalahan fatal...</p>
+            </div>
+            <div class="card-footer bg-white border-0 pb-4 ps-4">
+              <a href="artikel-detail-2.html#artikel-3" class="text-accent text-decoration-none fw-bold ls-1 click-ripple">BACA SELENGKAPNYA <i class="fas fa-arrow-right ms-2 small"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5" data-aos="fade-up">
+        <small class="text-muted">Catatan: link "Baca Selengkapnya" diarahkan ke file <strong>artikel-detail-2.html</strong> (halaman kedua).</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12) Contact -->
+  <section id="contact" class="section-padding section-separated" style="background-color: #f0f2f5;">
+    <div class="container">
+      <div class="row g-5 align-items-lg-stretch">
+        <div class="col-lg-6" data-aos="fade-up">
+          <h5 class="text-accent">Hubungi Kami</h5>
+          <h2 class="mb-4 display-6">Siap Merencanakan Misi Anda?</h2>
+          <p class="mb-5 text-muted lead">Punya pertanyaan tentang paket korporat, ketersediaan tanggal, atau request khusus? Isi formulir dan tim kami akan segera merespons.</p>
+          <form>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingName" placeholder="Nama Lengkap" />
+              <label for="floatingName">Nama Lengkap / Institusi</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" />
+              <label for="floatingEmail">Alamat Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="tel" class="form-control" id="floatingPhone" placeholder="Nomor WhatsApp" />
+              <label for="floatingPhone">Nomor WhatsApp Aktif</label>
+            </div>
+            <div class="form-floating mb-4">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingMessage" style="height: 150px"></textarea>
+              <label for="floatingMessage">Pesan / Rencana Tanggal Booking</label>
+            </div>
+            <button type="submit" class="btn btn-paintball w-100 btn-lg py-3 click-ripple">Kirim Pesan <i class="fas fa-paper-plane ms-2"></i></button>
+          </form>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80">
+          <div class="bg-white p-5 shadow-sm rounded-4 h-100 d-flex flex-column pressable" style="border:1px solid rgba(0,0,0,.04);">
+            <h4 class="mb-4">Informasi Markas</h4>
+
+            <div class="d-flex mb-4">
+              <div class="flex-shrink-0"><i class="fas fa-map-marker-alt fa-2x text-accent"></i></div>
+              <div class="flex-grow-1 ms-4">
+                <h5 class="mb-1">Alamat Arena</h5>
+                <p class="text-muted mb-0">Jl. Raya Hutan Pinus No. 123, Kota Batu, Jawa Timur (Komplek Wisata Alam)</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-4">
+              <div class="flex-shrink-0"><i class="fas fa-phone-alt fa-2x text-accent"></i></div>
+              <div class="flex-grow-1 ms-4">
+                <h5 class="mb-1">Kontak Cepat</h5>
+                <p class="text-muted mb-0">Telepon: (0341) 593-748</p>
+                <p class="text-muted mb-0 fw-bold text-accent">WhatsApp: 0812-3456-7890</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-4">
+              <div class="flex-shrink-0"><i class="fas fa-envelope fa-2x text-accent"></i></div>
+              <div class="flex-grow-1 ms-4">
+                <h5 class="mb-1">Email</h5>
+                <p class="text-muted mb-0">booking@warzonebatu.com</p>
+              </div>
+            </div>
+
+            <div class="mt-auto rounded-4 overflow-hidden" style="height: 250px; width: 100%; background: #ddd;">
+              <iframe
+                title="Maps Batu Malang"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63235.52687931186!2d112.4974636316037!3d-7.881623732112556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7887146c519797%3A0x4027a76e3532430!2sBatu%2C%20Batu%20City%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1705300000000!5m2!1sen!2sid"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13) Footer -->
+  <footer class="section-separated section-separated-dark">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <h5 class="text-uppercase mb-4"><i class="fas fa-crosshairs me-2 text-accent"></i> Warzone Arena Batu</h5>
+          <p class="mb-4 pe-lg-4">
+            Provider outbound dan paintball terdepan di Batu Malang. Kami memadukan keseruan permainan taktis dengan keindahan alam hutan pinus sejak 2018. Safety First, Fun Always.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook" class="click-ripple"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram" class="click-ripple"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok" class="click-ripple"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="YouTube" class="click-ripple"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6" data-aos="fade-up" data-aos-delay="50">
+          <h5 class="text-white mb-4">Navigasi</h5>
+          <ul>
+            <li><a href="#home"><i class="fas fa-chevron-right me-2 small text-accent"></i>Home</a></li>
+            <li><a href="#about"><i class="fas fa-chevron-right me-2 small text-accent"></i>Tentang Kami</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right me-2 small text-accent"></i>Paket & Harga</a></li>
+            <li><a href="#gallery"><i class="fas fa-chevron-right me-2 small text-accent"></i>Galeri Foto</a></li>
+            <li><a href="#blog"><i class="fas fa-chevron-right me-2 small text-accent"></i>Artikel Tips</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6" data-aos="fade-up" data-aos-delay="100">
+          <h5 class="text-white mb-4">Layanan Kami</h5>
+          <ul>
+            <li><a href="#"><i class="fas fa-chevron-right me-2 small text-accent"></i>Fun Game</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right me-2 small text-accent"></i>Corporate Gathering</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right me-2 small text-accent"></i>Tournament Hosting</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right me-2 small text-accent"></i>Sewa Gear Pro</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+          <h5 class="text-white mb-4">Hubungi Kami</h5>
+          <ul class="list-unstyled text-secondary mb-4">
+            <li class="mb-3 d-flex"><i class="fas fa-map-marker-alt me-3 mt-1 text-accent"></i><span>Jl. Hutan Pinus Raya, Kota Batu, Jawa Timur</span></li>
+            <li class="mb-3"><i class="fas fa-phone-alt me-3 text-accent"></i>(0341) 593-748</li>
+            <li class="mb-3"><i class="fab fa-whatsapp me-3 text-accent"></i>0812-3456-7890</li>
+            <li><i class="fas fa-envelope me-3 text-accent"></i>info@warzonebatu.com</li>
+          </ul>
+          <h6 class="text-white mb-3">Jam Operasional</h6>
+          <ul class="list-unstyled small mb-0">
+            <li class="d-flex justify-content-between mb-2"><span>Senin - Jumat:</span> <span>09:00 - 17:00 WIB</span></li>
+            <li class="d-flex justify-content-between text-accent fw-bold"><span>Sabtu - Minggu & Libur:</span> <span>08:00 - 18:00 WIB</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-5" />
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0 small">© 2026 <strong>Warzone Paintball Arena Batu</strong>. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+          <ul class="list-inline mb-0 small">
+            <li class="list-inline-item"><a href="#" class="click-ripple">Privacy Policy</a></li>
+            <li class="list-inline-item text-muted mx-2">|</li>
+            <li class="list-inline-item"><a href="#" class="click-ripple">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Gallery Modal -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <img src="" id="modalImage" alt="Full Screen Gallery" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Order Modal -->
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content" style="border-radius: var(--radius-lg); border:1px solid rgba(0,0,0,.06); overflow:hidden;">
+        <div class="modal-header" style="background: linear-gradient(90deg, rgba(58,75,44,.12), rgba(230,92,0,.10));">
+          <h5 class="modal-title"><i class="fas fa-clipboard-list me-2 text-accent"></i>Form Pemesanan Paket</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <form id="orderForm" class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Nama</label>
+              <input type="text" class="form-control" id="orderName" placeholder="Nama lengkap" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">No WhatsApp</label>
+              <!-- REVISI: hilangkan placeholder '08xxxxxxxxxx' agar tidak ada 'xxxx' -->
+              <input type="tel" class="form-control" id="orderWA" placeholder="0812 3456 7890" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Tanggal Booking</label>
+              <input type="date" class="form-control" id="orderDate" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Jumlah Peserta</label>
+              <input type="number" class="form-control" id="orderPax" min="1" placeholder="contoh: 10" required />
+            </div>
+            <div class="col-12">
+              <label class="form-label">Pilihan Paket</label>
+              <select class="form-select" id="orderPackage" required>
+                <option value="Fun Game Group">Fun Game Group</option>
+                <option value="Corporate Outbound">Corporate Outbound</option>
+                <option value="Tournament Pro">Tournament Pro</option>
+                <!-- REVISI (PERINTAH 1): opsi paket promo agar bisa dipilih otomatis -->
+                <option value="Fun Game Group + Kode Promo">Fun Game Group + Kode Promo</option>
+              </select>
+              <small class="text-muted">Paket otomatis terisi saat Anda menekan tombol "Detail Paket" atau "Gunakan Promo".</small>
+            </div>
+
+            <div class="col-12 mt-2">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="button" class="btn btn-outline-dark rounded-pill px-4 click-ripple" data-bs-dismiss="modal">Tutup</button>
+                <button type="submit" class="btn btn-paintball rounded-pill px-5 click-ripple">
+                  <i class="fab fa-whatsapp me-2"></i> Kirim via WhatsApp
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer small text-muted" style="border-top: 0;">
+          *Form ini akan membuka WhatsApp dengan pesan otomatis (silakan isi nomor WA tujuan di script).
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Detail Modal (Pro Shop) -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content" style="border-radius: var(--radius-lg); border:1px solid rgba(0,0,0,.06); overflow:hidden;">
+        <div class="modal-header" style="background: linear-gradient(90deg, rgba(58,75,44,.12), rgba(230,92,0,.10));">
+          <h5 class="modal-title">
+            <i class="fas fa-box-open me-2 text-accent"></i>
+            <span id="productModalTitle">Detail Produk</span>
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-5">
+              <div class="rounded-4 overflow-hidden" style="border:1px solid rgba(0,0,0,.06); box-shadow: 0 10px 24px rgba(0,0,0,0.06);">
+                <img id="productModalImg" src="" alt="Produk" style="width:100%; height: 320px; object-fit: cover;">
+              </div>
+            </div>
+
+            <div class="col-md-7">
+              <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                <div class="h4 mb-0" style="font-family:'Open Sans',sans-serif;" id="productModalName">Nama Produk</div>
+                <div class="fs-4 fw-bold text-accent" style="font-family:'Open Sans',sans-serif;" id="productModalPrice">Rp -</div>
+              </div>
+
+              <p class="text-muted mt-3 mb-3" id="productModalDesc">
+                Deskripsi produk akan tampil di sini.
+              </p>
+
+              <div class="bg-white rounded-4 p-3" style="border:1px solid rgba(0,0,0,.06);">
+                <h6 class="mb-3 text-uppercase" style="font-family:'Montserrat',sans-serif;">Spesifikasi Singkat</h6>
+                <ul class="mb-0 text-muted small" id="productModalSpecs" style="line-height: 1.8;">
+                  <!-- diisi via JS -->
+                </ul>
+              </div>
+
+              <div class="mt-3 small text-muted">
+                <i class="fas fa-info-circle me-2 text-accent"></i>
+                Stok & varian dapat berubah. Untuk ketersediaan, silakan chat admin.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer" style="border-top:0;">
+          <button type="button" class="btn btn-outline-dark rounded-pill px-4 click-ripple" data-bs-dismiss="modal">Tutup</button>
+          <a href="#contact" class="btn btn-paintball rounded-pill px-5 click-ripple" data-bs-dismiss="modal">
+            <i class="fab fa-whatsapp me-2"></i> Tanya Admin
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp -->
+  <!-- REVISI (PERINTAH 2): isi link wa.me agar aktif -->
+  <a href="https://wa.me/6281234567890?text=Halo%20Warzone%20Arena!%20Saya%20ingin%20tanya%20jadwal%20dan%20harga%20paket."
+     class="btn btn-success floating-btn click-ripple" aria-label="WhatsApp" title="Chat WhatsApp">
+    <i class="fab fa-whatsapp fs-4"></i>
+  </a>
+
+  <!-- Floating Top -->
+  <button type="button" class="btn floating-btn floating-top click-ripple" id="btnTop" aria-label="Kembali ke atas" title="Kembali ke atas">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    // =========================
+    // AOS init
+    // =========================
+    AOS.init({
+      duration: 750,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 90
+    });
+
+    // =========================
+    // Ripple effect
+    // =========================
+    function addRipple(e){
+      const target = e.currentTarget;
+      const rect = target.getBoundingClientRect();
+      const ripple = document.createElement("span");
+      ripple.className = "ripple";
+      const size = Math.max(rect.width, rect.height);
+      ripple.style.width = ripple.style.height = size + "px";
+      ripple.style.left = (e.clientX - rect.left - size/2) + "px";
+      ripple.style.top = (e.clientY - rect.top - size/2) + "px";
+      target.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 700);
+    }
+    document.querySelectorAll(".click-ripple").forEach(el => el.addEventListener("click", addRipple));
+
+    // =========================
+    // efek muncul ketika bagian yang diklik itu
+    // =========================
+    function focusSectionById(id){
+      const el = document.querySelector(id);
+      if(!el) return;
+      el.classList.remove("focus-ring"); // reset
+      void el.offsetWidth; // reflow
+      el.classList.add("focus-ring");
+      setTimeout(() => el.classList.remove("focus-ring"), 1150);
+    }
+
+    // smooth scroll + focus ring for internal anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener("click", (e) => {
+        const href = a.getAttribute("href");
+        if(!href || href === "#") return;
+        const target = document.querySelector(href);
+        if(!target) return;
+
+        // REVISI: kalau target promo masih display:none, tampilkan dulu
+        if (href === "#promo") {
+          const promoSection = document.getElementById("promo");
+          if (promoSection && promoSection.style.display === "none") {
+            promoSection.style.display = "";
+            try { AOS.refreshHard(); } catch(err){}
+          }
+        }
+
+        e.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        setTimeout(() => focusSectionById(href), 400);
+      });
+    });
+
+    // =========================
+    // Active nav link on scroll
+    // =========================
+    const navLinks = document.querySelectorAll(".navbar .nav-link");
+    const sections = [...navLinks].map(a => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+
+    function setActiveLink(){
+      const scrollPos = window.scrollY + 120;
+      let current = sections[0]?.id || "";
+      for (const sec of sections) {
+        if (sec.offsetTop <= scrollPos) current = sec.id;
+      }
+      navLinks.forEach(a => {
+        a.classList.toggle("active", a.getAttribute("href") === "#" + current);
+      });
+    }
+    window.addEventListener("scroll", setActiveLink, { passive: true });
+    setActiveLink();
+
+    // =========================
+    // CTA "Klaim Promo" -> tampilkan promo section + scroll + efek muncul
+    // =========================
+    const promoSection = document.getElementById("promo");
+    const btnClaimPromo = document.getElementById("btnClaimPromo");
+    if(btnClaimPromo && promoSection){
+      btnClaimPromo.addEventListener("click", () => {
+        if (promoSection.style.display === "none") {
+          promoSection.style.display = ""; // show
+          try { AOS.refreshHard(); } catch(e){}
+        }
+        setTimeout(() => {
+          promoSection.scrollIntoView({ behavior: "smooth", block: "start" });
+          setTimeout(() => {
+            focusSectionById("#promo");
+          }, 450);
+        }, 80);
+      });
+    }
+
+    // =========================
+    // Portofolio pagination 3 per page
+    // =========================
+    const galleryImages = [
+      { src: "https://images.unsplash.com/photo-1512413914633-b5043f4041ea?q=80&w=1200&auto=format&fit=crop", alt: "Aksi di Hutan" },
+      { src: "https://images.unsplash.com/photo-1554188248-986adbb73be4?q=80&w=1200&auto=format&fit=crop", alt: "Membidik Lawan" },
+      { src: "https://images.unsplash.com/photo-1519882191636-6b6851b34b41?q=80&w=1200&auto=format&fit=crop", alt: "Tim Pemenang" },
+      { src: "https://images.unsplash.com/photo-1517487227443-4cb50325b34a?q=80&w=1200&auto=format&fit=crop", alt: "Arena Bunker" },
+      { src: "https://images.unsplash.com/photo-1595187798363-239569614742?q=80&w=1200&auto=format&fit=crop", alt: "Persiapan Gear" },
+      { src: "https://images.unsplash.com/photo-1473445730015-841f29a9490b?q=80&w=1200&auto=format&fit=crop", alt: "Serangan Asap" },
+      { src: "https://images.unsplash.com/photo-1544264639-66c3d97f26d2?q=80&w=1200&auto=format&fit=crop", alt: "Taktik di Medan Hutan" },
+      { src: "https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?q=80&w=1200&auto=format&fit=crop", alt: "Momen Turnamen" },
+      { src: "https://images.unsplash.com/photo-1579246830578-8318e47f7a77?q=80&w=1200&auto=format&fit=crop", alt: "Briefing Marshal" }
+    ];
+
+    const perPage = 3;
+    let currentPage = 1;
+
+    const galleryGrid = document.getElementById("galleryGrid");
+    const prevBtn = document.getElementById("galleryPrev");
+    const nextBtn = document.getElementById("galleryNext");
+    const pageLabel = document.getElementById("galleryPage");
+    const totalLabel = document.getElementById("galleryTotal");
+    const dotsEl = document.getElementById("galleryDots");
+
+    function renderGallery(page){
+      const totalPages = Math.ceil(galleryImages.length / perPage);
+      currentPage = Math.min(Math.max(page, 1), totalPages);
+
+      const start = (currentPage - 1) * perPage;
+      const end = start + perPage;
+      const slice = galleryImages.slice(start, end);
+
+      galleryGrid.innerHTML = slice.map(item => `
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item pressable click-ripple" data-bs-toggle="modal" data-bs-target="#galleryModal" data-src="${item.src}">
+            <img loading="lazy" src="${item.src}" alt="${item.alt}">
+            <div class="gallery-overlay">
+              <i class="fas fa-eye gallery-icon"></i>
+            </div>
+          </div>
+        </div>
+      `).join("");
+
+      pageLabel.textContent = currentPage;
+      totalLabel.textContent = totalPages;
+
+      prevBtn.disabled = currentPage === 1;
+      nextBtn.disabled = currentPage === totalPages;
+
+      dotsEl.innerHTML = Array.from({length: totalPages}).map((_, i) => {
+        const p = i + 1;
+        const active = p === currentPage ? "active" : "";
+        return `
+          <li class="page-item ${active}">
+            <button class="page-link click-ripple" type="button" data-page="${p}">${p}</button>
+          </li>
+        `;
+      }).join("");
+
+      document.querySelectorAll(".gallery-item").forEach(el => {
+        el.addEventListener("click", () => {
+          document.getElementById("modalImage").src = el.getAttribute("data-src");
+        });
+      });
+
+      document.querySelectorAll("#galleryGrid .click-ripple, #galleryDots .click-ripple").forEach(el => {
+        el.addEventListener("click", addRipple);
+      });
+
+      const section = document.getElementById("gallery");
+      if(section) {
+        section.classList.remove("focus-ring");
+        void section.offsetWidth;
+        section.classList.add("focus-ring");
+        setTimeout(() => section.classList.remove("focus-ring"), 950);
+      }
+    }
+
+    prevBtn.addEventListener("click", () => renderGallery(currentPage - 1));
+    nextBtn.addEventListener("click", () => renderGallery(currentPage + 1));
+    dotsEl.addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-page]");
+      if(!btn) return;
+      renderGallery(parseInt(btn.getAttribute("data-page"), 10));
+    });
+    renderGallery(1);
+
+    const galleryModalEl = document.getElementById("galleryModal");
+    galleryModalEl.addEventListener("hidden.bs.modal", () => {
+      document.getElementById("modalImage").src = "";
+    });
+
+    // =========================
+    // Services Modal: auto set package
+    // =========================
+    const orderModalEl = document.getElementById("orderModal");
+    orderModalEl.addEventListener("show.bs.modal", (event) => {
+      const trigger = event.relatedTarget;
+      const pkg = trigger?.getAttribute("data-package") || "Fun Game Group";
+      document.getElementById("orderPackage").value = pkg;
+    });
+
+    // =========================
+    // REVISI (PERINTAH): Pro Shop Modal detail
+    // =========================
+    const PRODUCT_DETAILS = {
+      mask: {
+        name: "Pro Tactical Mask Thermal",
+        price: "Rp 850.000",
+        img: "https://images.unsplash.com/photo-1522502781491-1262d0df545b?q=80&w=1200&auto=format&fit=crop",
+        desc:
+          "Masker full-face dengan lensa thermal untuk mengurangi fog/embun, nyaman dipakai di arena hutan dan menjaga visibilitas saat permainan intens.",
+        specs: [
+          "Lensa thermal anti-fog (lebih stabil di suhu dingin)",
+          "Full-face coverage, strap adjustable",
+          "Ventilasi nyaman untuk durasi main panjang",
+          "Cocok untuk fun game hingga sparring komunitas"
+        ]
+      },
+      jersey: {
+        name: "Custom Team Jersey (Camo)",
+        price: "Rp 250.000",
+        img: "https://images.unsplash.com/photo-1594951471018-8d38dd965257?q=80&w=1200&auto=format&fit=crop",
+        desc:
+          "Jersey tim bahan ringan dan cepat kering, nyaman untuk bergerak cepat. Bisa untuk outfit tim outing, komunitas, atau tournament look.",
+        specs: [
+          "Bahan breathable & quick-dry",
+          "Cut nyaman untuk mobilitas (lari, crouch, slide)",
+          "Motif camo sporty, cocok untuk foto dokumentasi",
+          "Tersedia size beragam (menyesuaikan stok)"
+        ]
+      },
+      glove: {
+        name: "Armored Half-Finger Glove",
+        price: "Rp 125.000",
+        img: "https://images.unsplash.com/photo-1616167882582-721db597d264?q=80&w=1200&auto=format&fit=crop",
+        desc:
+          "Sarung tangan half-finger untuk grip lebih mantap, dengan proteksi knuckle ringan agar tangan tetap aman saat manuver di medan.",
+        specs: [
+          "Half-finger untuk kontrol trigger & handling lebih presisi",
+          "Knuckle padding ringan",
+          "Grip anti-slip untuk performa stabil",
+          "Nyaman dipakai di cuaca sejuk Batu"
+        ]
+      },
+      smoke: {
+        name: "Tactical Smoke Grenade",
+        price: "Rp 150.000",
+        img: "https://images.unsplash.com/photo-1555547432-d67067d740eb?q=80&w=1200&auto=format&fit=crop",
+        desc:
+          "Properti efek asap untuk kebutuhan skenario dan foto/video yang lebih sinematik. Digunakan sesuai SOP arena dan arahan marshal.",
+        specs: [
+          "Efek visual asap untuk immersion skenario",
+          "Dipakai sesuai aturan & briefing marshal",
+          "Cocok untuk misi 'cover & move' dan dokumentasi",
+          "Ketersediaan & aturan penggunaan mengikuti kebijakan arena"
+        ]
+      }
+    };
+
+    const productModalEl = document.getElementById("productModal");
+    if (productModalEl) {
+      productModalEl.addEventListener("show.bs.modal", (event) => {
+        const trigger = event.relatedTarget;
+        const key = trigger?.getAttribute("data-product");
+        const data = PRODUCT_DETAILS[key] || PRODUCT_DETAILS.mask;
+
+        document.getElementById("productModalTitle").textContent = "Detail Produk";
+        document.getElementById("productModalName").textContent = data.name;
+        document.getElementById("productModalPrice").textContent = data.price;
+
+        const imgEl = document.getElementById("productModalImg");
+        imgEl.src = data.img;
+        imgEl.alt = data.name;
+
+        document.getElementById("productModalDesc").textContent = data.desc;
+
+        const specsEl = document.getElementById("productModalSpecs");
+        specsEl.innerHTML = (data.specs || [])
+          .map((s) => `<li><i class="fas fa-check text-accent me-2"></i>${s}</li>`)
+          .join("");
+      });
+
+      productModalEl.addEventListener("hidden.bs.modal", () => {
+        const imgEl = document.getElementById("productModalImg");
+        if (imgEl) imgEl.src = "";
+      });
+    }
+
+    // =========================
+    // Order Form -> WhatsApp
+    // =========================
+    const WA_TARGET = "6281234567890"; // GANTI jika mau nomor lain
+    document.getElementById("orderForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const name = document.getElementById("orderName").value.trim();
+      const wa = document.getElementById("orderWA").value.trim();
+      const date = document.getElementById("orderDate").value;
+      const pax = document.getElementById("orderPax").value;
+      const pkg = document.getElementById("orderPackage").value;
+
+      const msg =
+        `Halo Warzone Arena!%0A` +
+        `Saya ingin booking paket:%0A` +
+        `- Paket: ${encodeURIComponent(pkg)}%0A` +
+        `- Nama: ${encodeURIComponent(name)}%0A` +
+        `- No WA: ${encodeURIComponent(wa)}%0A` +
+        `- Tanggal: ${encodeURIComponent(date)}%0A` +
+        `- Peserta: ${encodeURIComponent(pax)}%0A` +
+        `%0ATerima kasih!`;
+
+      const url = `https://wa.me/${WA_TARGET}?text=${msg}`;
+      window.open(url, "_blank", "noopener,noreferrer");
+    });
+
+    // =========================
+    // Floating Top
+    // =========================
+    const btnTop = document.getElementById("btnTop");
+    btnTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
