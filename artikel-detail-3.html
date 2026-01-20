@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aturan Emas: Jangan Pernah Lepas Masker! - Warzone Arena Batu</title>
+
+  <!-- SEO Basic -->
+  <meta name="description" content="Safety guide paintball lengkap: aturan masker, prosedur fogging, zona aman, jarak aman, etika tembak, dan checklist sebelum & saat bermain." />
+  <meta name="keywords" content="safety paintball, aturan paintball, masker paintball, prosedur aman paintball, warzone arena batu" />
+  <meta name="author" content="Warzone Arena Batu" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+
+  <link rel="canonical" href="https://warzonebatu.com/artikel-detail-3.html" />
+
+  <meta name="theme-color" content="#121212" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aturan Emas: Jangan Pernah Lepas Masker! - Warzone Arena Batu" />
+  <meta property="og:description" content="Panduan safety wajib: masker ON, prosedur saat lensa berembun, dan aturan main aman." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://warzonebatu.com/artikel-detail-3.html" />
+  <meta property="og:site_name" content="Warzone Arena Batu" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517487227443-4cb50325b34a?q=80&w=1600&auto=format&fit=crop" />
+  <meta property="og:locale" content="id_ID" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aturan Emas: Jangan Pernah Lepas Masker! - Warzone Arena Batu" />
+  <meta name="twitter:description" content="Safety guide wajib sebelum bermain paintball." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1517487227443-4cb50325b34a?q=80&w=1600&auto=format&fit=crop" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <style>
+    :root{
+      --primary-color: #3a4b2c;
+      --secondary-color: #121212;
+      --accent-color: #e65c00;
+      --accent-gold: #ffb000;
+      --light-bg: #f8f9fa;
+
+      --glass: rgba(18, 18, 18, 0.55);
+      --glass-border: rgba(255,255,255,0.12);
+      --soft-shadow: 0 18px 55px rgba(0,0,0,0.22);
+      --soft-shadow-2: 0 10px 30px rgba(0,0,0,0.12);
+      --radius: 16px;
+      --radius-lg: 22px;
+    }
+
+    body{
+      font-family: "Poppins", sans-serif;
+      color: #333;
+      overflow-x: hidden;
+      background: var(--light-bg);
+    }
+
+    h1,h2,h3,h4,
+    .navbar-brand, .btn,
+    .card-title, .breadcrumb, .article-title{
+      font-family: "Open Sans", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    h2{ font-weight: 800; }
+    h3{ font-weight: 800; }
+
+    h5,h6,
+    .meta, footer h6{
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: .6px;
+      font-weight: 700;
+    }
+
+    .text-accent{ color: var(--accent-color) !important; }
+    .text-gold{ color: var(--accent-gold) !important; }
+
+    .section-padding{ padding: 90px 0; }
+
+    .pressable{ transition: transform .25s ease, box-shadow .25s ease, filter .25s ease; }
+    .pressable:hover{ transform: translateY(-6px); }
+    .pressable:active{ transform: translateY(-2px) scale(.99); }
+
+    .click-ripple{ position: relative; overflow:hidden; }
+    .ripple{
+      position:absolute;
+      border-radius:999px;
+      transform:scale(0);
+      animation:ripple .65s ease-out;
+      background: rgba(255,255,255,0.28);
+      pointer-events:none;
+      mix-blend-mode: overlay;
+    }
+    @keyframes ripple{
+      to{ transform:scale(3.2); opacity:0; }
+    }
+
+    .navbar{
+      background: var(--glass);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding: 14px 0;
+      border-bottom: 1px solid var(--glass-border);
+      box-shadow: 0 14px 40px rgba(0,0,0,.15);
+    }
+    .navbar-brand{
+      font-size: 1.4rem;
+      color: var(--accent-color) !important;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+    .nav-link{
+      color: rgba(255,255,255,0.82) !important;
+      margin-left: 15px;
+      font-size: .9rem;
+      letter-spacing: 1.1px;
+      font-weight: 600;
+      transition: .3s;
+      position: relative;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+    }
+    .nav-link::after{
+      content:"";
+      position:absolute;
+      left:12px;
+      bottom:-6px;
+      width:0;
+      height:2px;
+      background: linear-gradient(90deg, var(--accent-color), var(--accent-gold));
+      transition: width .25s ease;
+      opacity:.9;
+    }
+    .nav-link:hover::after, .nav-link.active::after{ width: calc(100% - 24px); }
+    .nav-link:hover, .nav-link.active{ color:#fff !important; }
+
+    .navbar-toggler{ border-color: rgba(255,255,255,0.16); }
+    .navbar-toggler:focus{ box-shadow:none; border-color: var(--accent-color); }
+    .navbar-toggler .fa-bars{ color:#fff; }
+
+    @media (max-width: 991.98px){
+      .navbar .navbar-collapse{
+        margin-top:12px;
+        background: rgba(18,18,18,.75);
+        border: 1px solid rgba(255,255,255,.10);
+        border-radius: 16px;
+        padding: 10px 12px;
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        box-shadow: var(--soft-shadow-2);
+      }
+      .nav-link{ margin-left:0; border-radius:12px; padding:10px 12px; }
+      .nav-link:hover{ background: rgba(255,255,255,.06); }
+      .nav-link::after{ display:none; }
+    }
+
+    .article-hero{
+      padding-top: 110px;
+      padding-bottom: 48px;
+      background:
+        radial-gradient(900px 420px at 12% 0%, rgba(230,92,0,.20), transparent 60%),
+        radial-gradient(900px 420px at 90% 10%, rgba(255,176,0,.12), transparent 55%),
+        linear-gradient(135deg, rgba(18,18,18,.92), rgba(18,18,18,.72)),
+        url("https://images.unsplash.com/photo-1512413914633-b5043f4041ea?q=80&w=1800&auto=format&fit=crop");
+      background-size: cover;
+      background-position: center;
+      color:#fff;
+      position: relative;
+      overflow:hidden;
+    }
+    .article-hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background: linear-gradient(180deg, rgba(0,0,0,.10), rgba(0,0,0,.25));
+      pointer-events:none;
+    }
+    .article-hero .container{ position: relative; z-index: 1; }
+
+    .badge-soft{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.14);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+    }
+    .badge-soft i{ color: var(--accent-gold); }
+
+    .article-card{
+      background: rgba(255,255,255,0.92);
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 14px 35px rgba(0,0,0,0.06);
+      overflow:hidden;
+      position: relative;
+    }
+    .article-cover{
+      height: 380px;
+      width: 100%;
+      object-fit: cover;
+      filter: saturate(1.05) contrast(1.03);
+    }
+    @media (max-width: 420px){
+      .article-cover{ height: 240px; }
+    }
+
+    .meta{
+      color: rgba(0,0,0,0.55);
+      font-size: .92rem;
+      font-weight: 700;
+    }
+    .meta .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(0,0,0,.03);
+      border: 1px solid rgba(0,0,0,.06);
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    .btn-paintball{
+      background: linear-gradient(45deg, var(--accent-color), #ff7b00);
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      letter-spacing: 1.2px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 22px rgba(230, 92, 0, 0.25);
+      border-radius: 999px;
+      position: relative;
+      font-family: "Open Sans", sans-serif;
+      text-transform: uppercase;
+    }
+    .btn-paintball:hover{
+      background: linear-gradient(45deg, #ff7b00, var(--accent-color));
+      color:#fff;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(230, 92, 0, 0.35);
+    }
+
+    .floating-btn{
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 56px;
+      height: 56px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      border-radius: 999px;
+      box-shadow: 0 16px 40px rgba(0,0,0,.25);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .floating-top{
+      bottom: 86px;
+      background: rgba(18,18,18,.75);
+      color:#fff;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    footer{
+      background-color: var(--secondary-color);
+      color:#bbb;
+      padding: 70px 0 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    footer::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 360px at 20% 0%, rgba(230,92,0,.12), transparent 60%),
+        radial-gradient(800px 360px at 85% 10%, rgba(255,176,0,.10), transparent 55%);
+      pointer-events:none;
+      opacity:.95;
+    }
+    footer .container{ position: relative; z-index:1; }
+    footer a{ color:#bbb; text-decoration:none; transition:.2s ease; }
+    footer a:hover{ color: var(--accent-color); padding-left: 4px; }
+
+    @media (prefers-reduced-motion: reduce){
+      * { scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html#blog">
+        <i class="fas fa-crosshairs me-2"></i> WARZONE ARENA
+      </a>
+
+      <button class="navbar-toggler click-ripple" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fas fa-bars"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Paket</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#gallery">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Kontak</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a href="index.html#contact" class="btn btn-paintball btn-sm rounded-pill w-100 px-4 py-2 click-ripple">
+              Booking Now
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="article-hero">
+    <div class="container" data-aos="fade-up">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-9">
+          <div class="badge-soft mb-3">
+            <i class="fas fa-shield-alt"></i>
+            <span>Artikel • Safety & SOP</span>
+          </div>
+          <h1 class="display-6 mb-2">Aturan Emas: Jangan Pernah Lepas Masker!</h1>
+          <p class="text-white-50 mb-0" style="max-width: 85ch;">
+            Paintball itu seru kalau aman. Artikel ini membahas aturan masker secara detail, prosedur saat lensa berembun,
+            zona aman, etika tembak, hingga checklist sebelum bermain agar pengalaman tetap fun tanpa risiko.
+          </p>
+
+          <nav aria-label="breadcrumb" class="mt-4">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a class="text-white-50 text-decoration-none" href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a class="text-white-50 text-decoration-none" href="index.html#blog">Blog</a></li>
+              <li class="breadcrumb-item active text-white" aria-current="page">Artikel 3</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="p-3 rounded-4" style="background: rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14); backdrop-filter: blur(10px);">
+            <div class="small text-white-50" style="font-family:'Montserrat',sans-serif;">Diterbitkan</div>
+            <div class="fw-bold" style="letter-spacing:1px;">28 Feb 2026</div>
+            <div class="small text-white-50 mt-2" style="font-family:'Montserrat',sans-serif;">Penulis</div>
+            <div class="fw-bold" style="letter-spacing:1px;">Safety Officer</div>
+            <div class="small text-white-50 mt-2" style="font-family:'Montserrat',sans-serif;">Estimasi Baca</div>
+            <div class="fw-bold" style="letter-spacing:1px;">8–10 menit</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="section-padding">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-12" data-aos="fade-up">
+          <article class="article-card pressable p-0">
+            <img class="article-cover" loading="lazy"
+                 src="https://images.unsplash.com/photo-1517487227443-4cb50325b34a?q=80&w=1600&auto=format&fit=crop"
+                 alt="Aturan Emas Jangan Pernah Lepas Masker" />
+
+            <div class="p-4 p-lg-5">
+              <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
+                <h2 class="article-title mb-0">Safety Guide Wajib</h2>
+                <span class="badge rounded-pill text-bg-dark" style="letter-spacing:.6px;">ARTIKEL #3</span>
+              </div>
+
+              <div class="meta mb-4">
+                <span class="pill"><i class="far fa-calendar-alt text-accent"></i> 28 Feb 2026</span>
+                <span class="pill"><i class="far fa-user text-accent"></i> Safety Officer</span>
+                <span class="pill"><i class="fas fa-tags text-accent"></i> Safety • SOP</span>
+                <span class="pill"><i class="far fa-clock text-accent"></i> 900+ kata</span>
+              </div>
+
+              <p class="lead text-muted">
+                Aturan paling penting dalam paintball hanya satu: <strong>masker/goggle tidak boleh dilepas selama berada di area permainan</strong>.
+                Tidak ada pengecualian. Bukan saat “lagi aman”, bukan saat “cuma sebentar”, bukan saat “mau bersihin lensa”. Kenapa aturan ini
+                dianggap mutlak? Karena risiko terbesar paintball adalah cedera pada area wajah dan mata—dan masker adalah pelindung utama.
+                Kalau kamu ingin bermain dengan seru dan percaya diri, pahami SOP berikut sampai benar-benar kebiasaan.
+              </p>
+
+              <h3 class="mt-4">Kenapa Masker Tidak Boleh Dilepas, Bahkan Sekali?</h3>
+              <p>
+                Paintball adalah olahraga yang melibatkan proyektil berkecepatan tinggi. Selain tembakan langsung, ada juga pantulan (ricochet)
+                dari pohon, dinding, atau bunker. Pantulan ini sering tidak bisa diprediksi arah dan waktunya. Bahkan jika kamu merasa sudah
+                “di belakang teman”, kondisi game bisa berubah cepat: ada pemain yang memutar, ada tembakan liar karena refleks, atau ada bola
+                yang memantul dari objek keras. Mata adalah organ yang sangat rentan, dan cedera mata adalah hal yang paling ingin dihindari
+                di semua arena profesional. Karena itu, masker bukan sekadar aksesori—masker adalah “izin” kamu berada di area permainan.
+              </p>
+
+              <h3 class="mt-4">Skenario Paling Sering Terjadi: Lensa Berembun (Fogging)</h3>
+              <p>
+                Fogging adalah alasan nomor satu orang tergoda membuka masker. Ini wajar terjadi karena perbedaan suhu, napas, dan keringat.
+                Namun SOP yang benar bukan membuka masker, melainkan melakukan prosedur aman. Kalau kamu membuka masker di area permainan,
+                kamu menukar “tidak nyaman” dengan “risiko cedera serius”.
+              </p>
+              <div class="alert alert-danger border-0" style="border-radius: 16px;">
+                <strong><i class="fas fa-exclamation-triangle me-2"></i> Larangan:</strong>
+                Jangan pernah menyelipkan masker, mengangkat sedikit, atau membuka bagian bawah untuk “ambil napas”. Itu tetap berbahaya.
+              </div>
+
+              <h3 class="mt-4">Prosedur Benar Saat Fogging</h3>
+              <ul>
+                <li><strong>Stop di cover</strong> (jangan jalan di area terbuka).</li>
+                <li><strong>Angkat tangan</strong> sebagai tanda butuh bantuan.</li>
+                <li><strong>Panggil marshal</strong> atau ikuti instruksi marshal terdekat.</li>
+                <li><strong>Keluar ke zona aman</strong> dengan pengawalan/arah marshal.</li>
+                <li><strong>Bersihkan lensa</strong> di zona aman, lalu kembali setelah siap.</li>
+              </ul>
+              <p>
+                Beberapa arena menyediakan masker thermal/anti-fog atau cairan anti-fog. Kalau kamu sering fogging, pertimbangkan
+                untuk memakai perlengkapan yang lebih nyaman atau atur napas agar tidak langsung mengembun ke lensa.
+              </p>
+
+              <h3 class="mt-4">Zona Aman Itu Apa?</h3>
+              <p>
+                Zona aman adalah area di luar field permainan yang sudah ditetapkan untuk melepas masker, mengisi ulang, dan briefing.
+                Biasanya di zona aman ada aturan tambahan seperti barrel cover, posisi marker safe, dan larangan menembak. Tujuannya satu:
+                memastikan tidak ada proyektil aktif di area yang orang bisa membuka perlindungan wajah.
+              </p>
+
+              <h3 class="mt-4">Aturan Tembak yang Aman dan Etis</h3>
+              <p>
+                Selain masker, ada aturan perilaku yang membuat game tetap aman dan nyaman:
+              </p>
+              <ul>
+                <li><strong>Jaga jarak aman</strong> sesuai briefing marshal (tiap arena bisa berbeda).</li>
+                <li><strong>Dilarang blind firing</strong> (menembak tanpa melihat target/di balik cover).</li>
+                <li><strong>Jangan menembak pemain yang sudah “out”</strong> atau mengangkat tangan.</li>
+                <li><strong>Call out hit dengan jujur</strong> (sportif = game lebih seru).</li>
+                <li><strong>Turunkan marker saat keluar</strong> dan ikuti jalur yang ditentukan.</li>
+              </ul>
+
+              <h3 class="mt-4">Kenapa Blind Firing Berbahaya?</h3>
+              <p>
+                Blind firing membuat arah tembakan tidak terkendali. Peluru bisa mengenai area sensitif dari jarak dekat atau mengenai orang
+                yang tidak siap. Selain itu, blind firing meningkatkan risiko menembak melewati batas area, atau mengenai marshal. Karena itu,
+                larangan ini ada di hampir semua arena yang menerapkan SOP serius.
+              </p>
+
+              <h3 class="mt-4">Checklist Safety Cepat (Wajib)</h3>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="p-3 rounded-4 bg-white" style="border:1px solid rgba(0,0,0,.06);">
+                    <h6 class="mb-2 text-uppercase"><i class="fas fa-shield-alt me-2 text-accent"></i> Sebelum Game</h6>
+                    <ul class="mb-0 text-muted small" style="line-height:1.9;">
+                      <li>Masker pas dan strap kencang</li>
+                      <li>Marker “safe” saat briefing</li>
+                      <li>Kenali batas area & jalur keluar</li>
+                      <li>Pahami isyarat “stop”/“out”</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="p-3 rounded-4 bg-white" style="border:1px solid rgba(0,0,0,.06);">
+                    <h6 class="mb-2 text-uppercase"><i class="fas fa-bullseye me-2 text-accent"></i> Saat Game</h6>
+                    <ul class="mb-0 text-muted small" style="line-height:1.9;">
+                      <li>Masker tetap ON sepanjang waktu</li>
+                      <li>Kalau fogging: angkat tangan, panggil marshal</li>
+                      <li>Hindari blind firing</li>
+                      <li>Stop tembak saat lawan “out”</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="mt-4">Bermain Aman = Bermain Lebih Seru</h3>
+              <p>
+                Banyak orang mengira safety itu “membatasi keseruan”. Padahal sebaliknya. Ketika semua pemain percaya bahwa aturan dijalankan,
+                permainan jadi lebih berani, lebih cepat, dan lebih sportif. Kamu tidak perlu takut hal-hal yang tidak perlu, sehingga fokus
+                ke strategi dan kerja sama tim. Safety juga membuat event bisa berjalan lancar dan semua orang pulang dengan pengalaman bagus.
+              </p>
+
+              <div class="alert alert-warning border-0 mt-4" style="border-radius: 16px;">
+                <strong><i class="fas fa-lightbulb me-2"></i> Saran:</strong> Kalau kamu baru pertama kali main, bilang ke marshal.
+                Biasanya marshal akan memberi arahan tambahan supaya kamu nyaman dan paham prosedur sejak awal.
+              </div>
+
+              <div class="mt-4 d-flex flex-wrap gap-2">
+                <a href="index.html#contact" class="btn btn-paintball click-ripple">
+                  <i class="fab fa-whatsapp me-2"></i> Tanya SOP & Booking
+                </a>
+                <a href="index.html#blog" class="btn btn-outline-dark rounded-pill px-4 click-ripple">
+                  Kembali ke Blog <i class="fas fa-th-large ms-2"></i>
+                </a>
+                <a href="artikel-detail-1.html" class="btn btn-outline-dark rounded-pill px-4 click-ripple">
+                  Baca Artikel 1 <i class="fas fa-arrow-left ms-2"></i>
+                </a>
+              </div>
+
+              <hr class="my-4" />
+
+              <h4 class="mb-3">Artikel Lainnya</h4>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <a class="text-decoration-none" href="artikel-detail-1.html">
+                    <div class="p-3 rounded-4 bg-white pressable" style="border:1px solid rgba(0,0,0,.06);">
+                      <div class="small text-muted" style="font-family:'Montserrat',sans-serif;">ARTIKEL #1</div>
+                      <div class="fw-bold">5 Strategi Menang Paintball di Arena Hutan</div>
+                      <div class="small text-muted mt-1">Panduan woodsball lengkap dan praktis.</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <a class="text-decoration-none" href="artikel-detail-2.html">
+                    <div class="p-3 rounded-4 bg-white pressable" style="border:1px solid rgba(0,0,0,.06);">
+                      <div class="small text-muted" style="font-family:'Montserrat',sans-serif;">ARTIKEL #2</div>
+                      <div class="fw-bold">Recap Turnamen “Battle of Batu 2026”</div>
+                      <div class="small text-muted mt-1">Format, highlight taktik, dan evaluasi tim.</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <a href="https://wa.me/6281234567890?text=Halo%20Warzone%20Arena!%20Saya%20ingin%20tanya%20jadwal%20dan%20harga%20paket."
+     class="btn btn-success floating-btn click-ripple" aria-label="WhatsApp" title="Chat WhatsApp">
+    <i class="fab fa-whatsapp fs-4"></i>
+  </a>
+
+  <button type="button" class="btn floating-btn floating-top click-ripple" id="btnTop" aria-label="Kembali ke atas" title="Kembali ke atas">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <footer>
+    <div class="container">
+      <div class="row gy-4 align-items-start">
+        <div class="col-lg-6">
+          <h5 class="text-uppercase mb-3"><i class="fas fa-crosshairs me-2 text-accent"></i> Warzone Arena Batu</h5>
+          <p class="mb-0">
+            Artikel resmi Warzone Arena Batu: strategi, recap event, dan panduan safety. Safety First, Fun Always.
+          </p>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+          <h6 class="text-white mb-2">Navigasi Cepat</h6>
+          <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
+            <a class="btn btn-outline-light rounded-pill px-3 py-2 click-ripple" href="artikel-detail-1.html">Artikel 1</a>
+            <a class="btn btn-outline-light rounded-pill px-3 py-2 click-ripple" href="artikel-detail-2.html">Artikel 2</a>
+            <a class="btn btn-outline-light rounded-pill px-3 py-2 click-ripple" href="artikel-detail-3.html">Artikel 3</a>
+            <a class="btn btn-outline-light rounded-pill px-3 py-2 click-ripple" href="index.html#blog">Kembali ke Blog</a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4" style="border-color: rgba(255,255,255,0.12) !important;" />
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 small">
+        <div>© 2026 <strong>Warzone Paintball Arena Batu</strong>. All Rights Reserved.</div>
+        <div class="text-white-50">File: artikel-detail-3.html</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init({ duration: 750, easing: "ease-out-cubic", once: true, offset: 90 });
+
+    function addRipple(e){
+      const target = e.currentTarget;
+      const rect = target.getBoundingClientRect();
+      const ripple = document.createElement("span");
+      ripple.className = "ripple";
+      const size = Math.max(rect.width, rect.height);
+      ripple.style.width = ripple.style.height = size + "px";
+      ripple.style.left = (e.clientX - rect.left - size/2) + "px";
+      ripple.style.top = (e.clientY - rect.top - size/2) + "px";
+      target.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 700);
+    }
+    document.querySelectorAll(".click-ripple").forEach(el => el.addEventListener("click", addRipple));
+
+    const btnTop = document.getElementById("btnTop");
+    btnTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  </script>
+</body>
+</html>

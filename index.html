@@ -932,6 +932,11 @@
       .pressable, .card, .gallery-item, .btn-paintball { transition: none !important; }
       .focus-ring{ animation: none !important; }
     }
+
+    /* =====================================================
+       REVISI (PERINTAH USER): Blog card clickable ke detail
+       ===================================================== */
+    #blog .blog-card-link { cursor: pointer; }
   </style>
 </head>
 
@@ -1507,7 +1512,8 @@
 
       <div class="row g-4">
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
-          <div class="card h-100 pressable">
+          <!-- REVISI: per-halaman tanpa hashtag -->
+          <div class="card h-100 pressable blog-card-link" data-article-link="artikel-detail-1.html" role="link" tabindex="0" aria-label="Buka artikel: 5 Strategi Menang Paintball di Arena Hutan">
             <img loading="lazy" src="https://images.unsplash.com/photo-1544264639-66c3d97f26d2?q=80&w=900&auto=format&fit=crop" class="card-img-top" alt="Tips Strategi" />
             <div class="card-body">
               <div class="d-flex justify-content-between text-muted small mb-3">
@@ -1515,18 +1521,19 @@
                 <span><i class="far fa-user me-2"></i>Admin</span>
               </div>
               <h5 class="card-title h4 mt-2">
-                <a href="artikel-detail-2.html#artikel-1" class="text-dark text-decoration-none">5 Strategi Menang Paintball di Arena Hutan</a>
+                <a href="artikel-detail-1.html" class="text-dark text-decoration-none">5 Strategi Menang Paintball di Arena Hutan</a>
               </h5>
               <p class="card-text text-muted">Pelajari formasi flank (menyergap dari samping) dan pentingnya komunikasi 'covering fire' untuk mendominasi tim lawan di area banyak pohon...</p>
             </div>
             <div class="card-footer bg-white border-0 pb-4 ps-4">
-              <a href="artikel-detail-2.html#artikel-1" class="text-accent text-decoration-none fw-bold ls-1 click-ripple">BACA SELENGKAPNYA <i class="fas fa-arrow-right ms-2 small"></i></a>
+              <a href="artikel-detail-1.html" class="text-accent text-decoration-none fw-bold ls-1 click-ripple">BACA SELENGKAPNYA <i class="fas fa-arrow-right ms-2 small"></i></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="card h-100 pressable">
+          <!-- REVISI: per-halaman tanpa hashtag -->
+          <div class="card h-100 pressable blog-card-link" data-article-link="artikel-detail-2.html" role="link" tabindex="0" aria-label="Buka artikel: Recap Turnamen Battle of Batu 2026">
             <img loading="lazy" src="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?q=80&w=900&auto=format&fit=crop" class="card-img-top" alt="Event Turnamen" />
             <div class="card-body">
               <div class="d-flex justify-content-between text-muted small mb-3">
@@ -1534,18 +1541,19 @@
                 <span><i class="far fa-user me-2"></i>Event Ops</span>
               </div>
               <h5 class="card-title h4 mt-2">
-                <a href="artikel-detail-2.html#artikel-2" class="text-dark text-decoration-none">Recap Turnamen 'Battle of Batu 2026'</a>
+                <a href="artikel-detail-2.html" class="text-dark text-decoration-none">Recap Turnamen 'Battle of Batu 2026'</a>
               </h5>
               <p class="card-text text-muted">Lihat keseruan dan highlights dari 32 tim profesional yang memperebutkan total hadiah 50 Juta Rupiah di arena utama kami...</p>
             </div>
             <div class="card-footer bg-white border-0 pb-4 ps-4">
-              <a href="artikel-detail-2.html#artikel-2" class="text-accent text-decoration-none fw-bold ls-1 click-ripple">BACA SELENGKAPNYA <i class="fas fa-arrow-right ms-2 small"></i></a>
+              <a href="artikel-detail-2.html" class="text-accent text-decoration-none fw-bold ls-1 click-ripple">BACA SELENGKAPNYA <i class="fas fa-arrow-right ms-2 small"></i></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 mx-auto" data-aos="fade-up" data-aos-delay="150">
-          <div class="card h-100 pressable">
+          <!-- REVISI: per-halaman tanpa hashtag -->
+          <div class="card h-100 pressable blog-card-link" data-article-link="artikel-detail-3.html" role="link" tabindex="0" aria-label="Buka artikel: Aturan Emas Jangan Pernah Lepas Masker">
             <img loading="lazy" src="https://images.unsplash.com/photo-1517487227443-4cb50325b34a?q=80&w=900&auto=format&fit=crop" class="card-img-top" alt="Safety Guide" />
             <div class="card-body">
               <div class="d-flex justify-content-between text-muted small mb-3">
@@ -1553,19 +1561,19 @@
                 <span><i class="far fa-user me-2"></i>Safety Officer</span>
               </div>
               <h5 class="card-title h4 mt-2">
-                <a href="artikel-detail-2.html#artikel-3" class="text-dark text-decoration-none">Aturan Emas: Jangan Pernah Lepas Masker!</a>
+                <a href="artikel-detail-3.html" class="text-dark text-decoration-none">Aturan Emas: Jangan Pernah Lepas Masker!</a>
               </h5>
               <p class="card-text text-muted">Panduan keselamatan terpenting di arena paintball. Mengapa melepas goggle, meskipun berembun, adalah kesalahan fatal...</p>
             </div>
             <div class="card-footer bg-white border-0 pb-4 ps-4">
-              <a href="artikel-detail-2.html#artikel-3" class="text-accent text-decoration-none fw-bold ls-1 click-ripple">BACA SELENGKAPNYA <i class="fas fa-arrow-right ms-2 small"></i></a>
+              <a href="artikel-detail-3.html" class="text-accent text-decoration-none fw-bold ls-1 click-ripple">BACA SELENGKAPNYA <i class="fas fa-arrow-right ms-2 small"></i></a>
             </div>
           </div>
         </div>
       </div>
 
       <div class="text-center mt-5" data-aos="fade-up">
-        <small class="text-muted">Catatan: link "Baca Selengkapnya" diarahkan ke file <strong>artikel-detail-2.html</strong> (halaman kedua).</small>
+        <small class="text-muted">Catatan: setiap tombol "Baca Selengkapnya" diarahkan ke halaman artikel masing-masing (tanpa hashtag).</small>
       </div>
     </div>
   </section>
@@ -1955,6 +1963,30 @@
         }, 80);
       });
     }
+
+    // =====================================================
+    // REVISI (PERINTAH USER): Blog card clickable ke detail
+    // - Klik di mana saja pada card => buka halaman artikel detail (tanpa hashtag)
+    // - Tapi jika user klik link <a> yang sudah ada, biarkan normal
+    // =====================================================
+    document.querySelectorAll("#blog .blog-card-link[data-article-link]").forEach((card) => {
+      const go = () => {
+        const url = card.getAttribute("data-article-link");
+        if(url) window.location.href = url;
+      };
+
+      card.addEventListener("click", (e) => {
+        if (e.target.closest("a")) return;
+        go();
+      });
+
+      card.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          go();
+        }
+      });
+    });
 
     // =========================
     // Portofolio pagination 3 per page

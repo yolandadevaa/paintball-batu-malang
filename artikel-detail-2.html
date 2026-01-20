@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recap Turnamen “Battle of Batu 2026” - Warzone Arena Batu</title>
+
+  <!-- SEO Basic -->
+  <meta name="description" content="Recap lengkap Battle of Batu 2026: format, taktik yang menang, evaluasi tim, pola komunikasi, dan tips persiapan event berikutnya." />
+  <meta name="keywords" content="turnamen paintball batu, recap paintball, battle of batu 2026, strategi turnamen paintball, warzone arena batu" />
+  <meta name="author" content="Warzone Arena Batu" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+
+  <link rel="canonical" href="https://warzonebatu.com/artikel-detail-2.html" />
+
+  <meta name="theme-color" content="#121212" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Recap Turnamen “Battle of Batu 2026” - Warzone Arena Batu" />
+  <meta property="og:description" content="Format, highlight taktik, fair play, dan tips persiapan untuk event berikutnya." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://warzonebatu.com/artikel-detail-2.html" />
+  <meta property="og:site_name" content="Warzone Arena Batu" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?q=80&w=1600&auto=format&fit=crop" />
+  <meta property="og:locale" content="id_ID" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Recap Turnamen “Battle of Batu 2026” - Warzone Arena Batu" />
+  <meta name="twitter:description" content="Format, highlight taktik, dan tips persiapan event." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?q=80&w=1600&auto=format&fit=crop" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <style>
+    :root{
+      --primary-color: #3a4b2c;
+      --secondary-color: #121212;
+      --accent-color: #e65c00;
+      --accent-gold: #ffb000;
+      --light-bg: #f8f9fa;
+
+      --glass: rgba(18, 18, 18, 0.55);
+      --glass-border: rgba(255,255,255,0.12);
+      --soft-shadow: 0 18px 55px rgba(0,0,0,0.22);
+      --soft-shadow-2: 0 10px 30px rgba(0,0,0,0.12);
+      --radius: 16px;
+      --radius-lg: 22px;
+    }
+
+    body{
+      font-family: "Poppins", sans-serif;
+      color: #333;
+      overflow-x: hidden;
+      background: var(--light-bg);
+    }
+
+    h1,h2,h3,h4,
+    .navbar-brand, .btn,
+    .card-title, .breadcrumb, .article-title{
+      font-family: "Open Sans", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    h2{ font-weight: 800; }
+    h3{ font-weight: 800; }
+
+    h5,h6,
+    .meta, footer h6{
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: .6px;
+      font-weight: 700;
+    }
+
+    .text-accent{ color: var(--accent-color) !important; }
+    .text-gold{ color: var(--accent-gold) !important; }
+
+    .section-padding{ padding: 90px 0; }
+
+    .pressable{ transition: transform .25s ease, box-shadow .25s ease, filter .25s ease; }
+    .pressable:hover{ transform: translateY(-6px); }
+    .pressable:active{ transform: translateY(-2px) scale(.99); }
+
+    .click-ripple{ position: relative; overflow:hidden; }
+    .ripple{
+      position:absolute;
+      border-radius:999px;
+      transform:scale(0);
+      animation:ripple .65s ease-out;
+      background: rgba(255,255,255,0.28);
+      pointer-events:none;
+      mix-blend-mode: overlay;
+    }
+    @keyframes ripple{
+      to{ transform:scale(3.2); opacity:0; }
+    }
+
+    .navbar{
+      background: var(--glass);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding: 14px 0;
+      border-bottom: 1px solid var(--glass-border);
+      box-shadow: 0 14px 40px rgba(0,0,0,.15);
+    }
+    .navbar-brand{
+      font-size: 1.4rem;
+      color: var(--accent-color) !important;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+    .nav-link{
+      color: rgba(255,255,255,0.82) !important;
+      margin-left: 15px;
+      font-size: .9rem;
+      letter-spacing: 1.1px;
+      font-weight: 600;
+      transition: .3s;
+      position: relative;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+    }
+    .nav-link::after{
+      content:"";
+      position:absolute;
+      left:12px;
+      bottom:-6px;
+      width:0;
+      height:2px;
+      background: linear-gradient(90deg, var(--accent-color), var(--accent-gold));
+      transition: width .25s ease;
+      opacity:.9;
+    }
+    .nav-link:hover::after, .nav-link.active::after{ width: calc(100% - 24px); }
+    .nav-link:hover, .nav-link.active{ color:#fff !important; }
+
+    .navbar-toggler{ border-color: rgba(255,255,255,0.16); }
+    .navbar-toggler:focus{ box-shadow:none; border-color: var(--accent-color); }
+    .navbar-toggler .fa-bars{ color:#fff; }
+
+    @media (max-width: 991.98px){
+      .navbar .navbar-collapse{
+        margin-top:12px;
+        background: rgba(18,18,18,.75);
+        border: 1px solid rgba(255,255,255,.10);
+        border-radius: 16px;
+        padding: 10px 12px;
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        box-shadow: var(--soft-shadow-2);
+      }
+      .nav-link{ margin-left:0; border-radius:12px; padding:10px 12px; }
+      .nav-link:hover{ background: rgba(255,255,255,.06); }
+      .nav-link::after{ display:none; }
+    }
+
+    .article-hero{
+      padding-top: 110px;
+      padding-bottom: 48px;
+      background:
+        radial-gradient(900px 420px at 12% 0%, rgba(230,92,0,.20), transparent 60%),
+        radial-gradient(900px 420px at 90% 10%, rgba(255,176,0,.12), transparent 55%),
+        linear-gradient(135deg, rgba(18,18,18,.92), rgba(18,18,18,.72)),
+        url("https://images.unsplash.com/photo-1512413914633-b5043f4041ea?q=80&w=1800&auto=format&fit=crop");
+      background-size: cover;
+      background-position: center;
+      color:#fff;
+      position: relative;
+      overflow:hidden;
+    }
+    .article-hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background: linear-gradient(180deg, rgba(0,0,0,.10), rgba(0,0,0,.25));
+      pointer-events:none;
+    }
+    .article-hero .container{ position: relative; z-index: 1; }
+
+    .badge-soft{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.14);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+    }
+    .badge-soft i{ color: var(--accent-gold); }
+
+    .article-card{
+      background: rgba(255,255,255,0.92);
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 14px 35px rgba(0,0,0,0.06);
+      overflow:hidden;
+      position: relative;
+    }
+    .article-cover{
+      height: 380px;
+      width: 100%;
+      object-fit: cover;
+      filter: saturate(1.05) contrast(1.03);
+    }
+    @media (max-width: 420px){
+      .article-cover{ height: 240px; }
+    }
+
+    .meta{
+      color: rgba(0,0,0,0.55);
+      font-size: .92rem;
+      font-weight: 700;
+    }
+    .meta .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(0,0,0,.03);
+      border: 1px solid rgba(0,0,0,.06);
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    .btn-paintball{
+      background: linear-gradient(45deg, var(--accent-color), #ff7b00);
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      letter-spacing: 1.2px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 22px rgba(230, 92, 0, 0.25);
+      border-radius: 999px;
+      position: relative;
+      font-family: "Open Sans", sans-serif;
+      text-transform: uppercase;
+    }
+    .btn-paintball:hover{
+      background: linear-gradient(45deg, #ff7b00, var(--accent-color));
+      color:#fff;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(230, 92, 0, 0.35);
+    }
+
+    .floating-btn{
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 56px;
+      height: 56px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      border-radius: 999px;
+      box-shadow: 0 16px 40px rgba(0,0,0,.25);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .floating-top{
+      bottom: 86px;
+      background: rgba(18,18,18,.75);
+      color:#fff;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    footer{
+      background-color: var(--secondary-color);
+      color:#bbb;
+      padding: 70px 0 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    footer::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 360px at 20% 0%, rgba(230,92,0,.12), transparent 60%),
+        radial-gradient(800px 360px at 85% 10%, rgba(255,176,0,.10), transparent 55%);
+      pointer-events:none;
+      opacity:.95;
+    }
+    footer .container{ position: relative; z-index:1; }
+    footer a{ color:#bbb; text-decoration:none; transition:.2s ease; }
+    footer a:hover{ color: var(--accent-color); padding-left: 4px; }
+
+    @media (prefers-reduced-motion: reduce){
+      * { scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html#blog">
+        <i class="fas fa-crosshairs me-2"></i> WARZONE ARENA
+      </a>
+
+      <button class="navbar-toggler click-ripple" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fas fa-bars"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Paket</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#gallery">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Kontak</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a href="index.html#contact" class="btn btn-paintball btn-sm rounded-pill w-100 px-4 py-2 click-ripple">
+              Booking Now
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="article-hero">
+    <div class="container" data-aos="fade-up">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-9">
+          <div class="badge-soft mb-3">
+            <i class="fas fa-trophy"></i>
+            <span>Artikel • Turnamen & Recap</span>
+          </div>
+          <h1 class="display-6 mb-2">Recap Turnamen “Battle of Batu 2026”</h1>
+          <p class="text-white-50 mb-0" style="max-width: 85ch;">
+            Dari format pertandingan, disiplin briefing, sampai taktik yang paling sering mengunci poin—recap ini dibuat agar tim komunitas
+            punya gambaran jelas untuk naik level di event berikutnya.
+          </p>
+
+          <nav aria-label="breadcrumb" class="mt-4">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a class="text-white-50 text-decoration-none" href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a class="text-white-50 text-decoration-none" href="index.html#blog">Blog</a></li>
+              <li class="breadcrumb-item active text-white" aria-current="page">Artikel 2</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="p-3 rounded-4" style="background: rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14); backdrop-filter: blur(10px);">
+            <div class="small text-white-50" style="font-family:'Montserrat',sans-serif;">Diterbitkan</div>
+            <div class="fw-bold" style="letter-spacing:1px;">05 Jan 2026</div>
+            <div class="small text-white-50 mt-2" style="font-family:'Montserrat',sans-serif;">Penulis</div>
+            <div class="fw-bold" style="letter-spacing:1px;">Event Ops</div>
+            <div class="small text-white-50 mt-2" style="font-family:'Montserrat',sans-serif;">Estimasi Baca</div>
+            <div class="fw-bold" style="letter-spacing:1px;">8–10 menit</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="section-padding">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-12" data-aos="fade-up">
+          <article class="article-card pressable p-0">
+            <img class="article-cover" loading="lazy"
+                 src="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?q=80&w=1600&auto=format&fit=crop"
+                 alt="Recap Turnamen Battle of Batu 2026" />
+
+            <div class="p-4 p-lg-5">
+              <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
+                <h2 class="article-title mb-0">Battle of Batu 2026</h2>
+                <span class="badge rounded-pill text-bg-dark" style="letter-spacing:.6px;">ARTIKEL #2</span>
+              </div>
+
+              <div class="meta mb-4">
+                <span class="pill"><i class="far fa-calendar-alt text-accent"></i> 05 Jan 2026</span>
+                <span class="pill"><i class="far fa-user text-accent"></i> Event Ops</span>
+                <span class="pill"><i class="fas fa-tags text-accent"></i> Turnamen • Recap</span>
+                <span class="pill"><i class="far fa-clock text-accent"></i> 900+ kata</span>
+              </div>
+
+              <p class="lead text-muted">
+                “Battle of Batu 2026” bukan hanya soal siapa yang paling cepat menembak. Event ini memperlihatkan bahwa tim yang rapi,
+                disiplin, dan punya rencana sederhana biasanya lebih konsisten menang. Recap ini merangkum format, highlight taktik,
+                dan catatan evaluasi yang bisa kamu terapkan untuk latihan—baik kamu pemain baru maupun tim komunitas yang ingin
+                naik kelas.
+              </p>
+
+              <h3 class="mt-4">Format Singkat & Kenapa Format Itu Penting</h3>
+              <p>
+                Turnamen berjalan dengan format pertandingan cepat: tempo tinggi, rotasi match rapi, dan briefing safety ketat sebelum ronde.
+                Format cepat memaksa tim untuk memprioritaskan keputusan: kapan push, kapan tahan, kapan rotasi. Dalam format seperti ini,
+                tim tidak punya banyak waktu “coba-coba”. Strategi harus sederhana dan bisa dieksekusi dalam hitungan detik.
+              </p>
+              <p>
+                Hal yang paling terasa dari format ini adalah pentingnya peran: tim yang sejak awal membagi tugas anchor, support,
+                dan entry biasanya lebih stabil. Tim yang seluruh pemainnya ingin maju bersamaan sering “putus” ketika satu pemain terkena,
+                lalu celah terbuka dan kontrol area hilang.
+              </p>
+
+              <h3 class="mt-4">Highlight Taktik Paling Konsisten Menghasilkan Poin</h3>
+              <p>
+                Sepanjang match, ada tiga pola yang paling sering terlihat pada tim yang menang: bukan taktik rumit, tapi kebiasaan
+                kecil yang dilakukan dengan disiplin.
+              </p>
+              <ol>
+                <li>
+                  <strong>Fast Open + Lock Lane:</strong> dua pemain mengambil cover maju dalam 10–15 detik pertama, sementara satu anchor
+                  mengunci lane panjang untuk mencegah counter-push. Fast open bukan berarti nekat; tetap pakai cover dan jalur aman.
+                </li>
+                <li>
+                  <strong>Delayed Flank:</strong> flank dilakukan bukan di detik pertama, tapi setelah lawan fokus duel depan.
+                  Ketika lawan “terkunci” adu tembak, flanker masuk dari sudut yang tidak terjaga. Delayed flank efektif karena lawan
+                  cenderung berhenti scanning setelah merasa “aman”.
+                </li>
+                <li>
+                  <strong>Objektif Timing:</strong> push objektif dilakukan saat lawan reload, kehilangan angle, atau saat komunikasi lawan kacau.
+                  Banyak tim kalah karena memaksakan push ketika lawan masih siap dan lane masih terkunci.
+                </li>
+              </ol>
+
+              <h3 class="mt-4">Komunikasi: Bedanya Tim Menang dan Tim “Hampir Menang”</h3>
+              <p>
+                Banyak tim sebenarnya punya aim bagus, tapi kalah karena komunikasi tidak rapi. Dalam turnamen, informasi harus
+                singkat, jelas, dan berulang. Misalnya, “Kiri dua, jauh!” atau “Tengah satu, dekat, tahan!” Informasi seperti ini
+                membantu tim memutuskan rotasi tanpa debat.
+              </p>
+              <p>
+                Tim yang menang biasanya melakukan dua hal: (1) menyebut patokan medan yang sama, (2) memberi update status.
+                Update status termasuk “reload”, “habis”, “pindah cover”, dan “aman”. Ini terdengar sederhana, tapi justru inilah
+                yang membuat tim bisa bergerak seperti satu unit.
+              </p>
+
+              <h3 class="mt-4">Manajemen Peluru & Tembakan yang “Bernilai”</h3>
+              <p>
+                Dalam match cepat, peluru adalah waktu. Kalau kamu spam, kamu mungkin merasa agresif, tapi sebenarnya kamu sedang menghabiskan
+                resource. Tim terbaik menembak untuk tujuan: menahan lawan keluar cover, memaksa pindah jalur, atau memberi ruang untuk
+                rekan bergerak. Tembakan yang bernilai adalah tembakan yang mengubah keputusan lawan.
+              </p>
+              <div class="alert alert-warning border-0" style="border-radius: 16px;">
+                <strong>Tips cepat:</strong> sebelum menembak, tanya diri sendiri: “Aku menekan siapa, dan untuk memberi ruang siapa bergerak?”
+                Kalau jawabannya kosong, kemungkinan kamu sedang spam.
+              </div>
+
+              <h3 class="mt-4">Catatan Fair Play & Safety yang Membuat Event Aman</h3>
+              <p>
+                Salah satu alasan event berjalan aman adalah disiplin aturan: masker tidak dilepas, blind firing dilarang, dan hit harus diakui.
+                Dalam suasana kompetitif, fair play justru meningkatkan kualitas game—karena semua orang percaya pada aturan yang sama.
+                Marshal berperan besar untuk memastikan jalur aman dan mencegah tindakan berbahaya.
+              </p>
+              <div class="alert alert-success border-0" style="border-radius: 16px;">
+                <i class="fas fa-check-circle me-2"></i>
+                <strong>Ingat:</strong> turnamen yang aman itu turnamen yang bisa dinikmati semua tim sampai akhir, tanpa insiden.
+              </div>
+
+              <h3 class="mt-4">Kalau Kamu Mau Ikut Event Berikutnya: Rencana Latihan 2 Minggu</h3>
+              <p>
+                Banyak tim bertanya: “Latihan apa yang paling berpengaruh?” Jawaban paling realistis adalah latihan yang membuat eksekusi
+                jadi otomatis. Berikut rencana sederhana dua minggu:
+              </p>
+              <ul>
+                <li><strong>Hari 1–3:</strong> latihan callout dan rotasi cover. Fokus bicara singkat dan tepat.</li>
+                <li><strong>Hari 4–6:</strong> latihan snap shooting dan lane control. 3 detik keluar–tembak–masuk.</li>
+                <li><strong>Hari 7–9:</strong> scrim mode objektif (bendera/defend). Menang bukan dari kill, tapi dari timing.</li>
+                <li><strong>Hari 10–14:</strong> simulasi match cepat 3–5 ronde. Review kesalahan, ulangi.</li>
+              </ul>
+
+              <p class="mt-4 text-muted">
+                Intinya: tim yang rapi mengalahkan tim yang hanya mengandalkan keberanian. Kalau kamu ingin latihan dengan skenario turnamen,
+                kamu bisa minta marshal mengatur mode cepat dan briefing ala kompetisi.
+              </p>
+
+              <div class="mt-4 d-flex flex-wrap gap-2">
+                <a href="index.html#contact" class="btn btn-paintball click-ripple">
+                  <i class="fab fa-whatsapp me-2"></i> Tanya Jadwal Event
+                </a>
+                <a href="artikel-detail-3.html" class="btn btn-outline-dark rounded-pill px-4 click-ripple">
+                  Artikel Berikutnya <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+                <a href="index.html#blog" class="btn btn-outline-dark rounded-pill px-4 click-ripple">
+                  Kembali ke Blog <i class="fas fa-th-large ms-2"></i>
+                </a>
+              </div>
+
+              <hr class="my-4" />
+
+              <h4 class="mb-3">Artikel Lainnya</h4>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <a class="text-decoration-none" href="artikel-detail-1.html">
+                    <div class="p-3 rounded-4 bg-white pressable" style="border:1px solid rgba(0,0,0,.06);">
+                      <div class="small text-muted" style="font-family:'Montserrat',sans-serif;">ARTIKEL #1</div>
+                      <div class="fw-bold">5 Strategi Menang Paintball di Arena Hutan</div>
+                      <div class="small text-muted mt-1">Woodsball guide: lane, pin-flank, objektif.</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <a class="text-decoration-none" href="artikel-detail-3.html">
+                    <div class="p-3 rounded-4 bg-white pressable" style="border:1px solid rgba(0,0,0,.06);">
+                      <div class="small text-muted" style="font-family:'Montserrat',sans-serif;">ARTIKEL #3</div>
+                      <div class="fw-bold">Aturan Emas: Jangan Pernah Lepas Masker!</div>
+                      <div class="small text-muted mt-1">Safety guide wajib untuk semua pemain.</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <a href="https://wa.me/6281234567890?text=Halo%20Warzone%20Arena!%20Saya%20ingin%20tanya%20jadwal%20dan%20harga%20paket."
+     class="btn btn-success floating-btn click-ripple" aria-label="WhatsApp" title="Chat WhatsApp">
+    <i class="fab fa-whatsapp fs-4"></i>
+  </a>
+
+  <button type="button" class="btn floating-btn floating-top click-ripple" id="btnTop" aria-label="Kembali ke atas" title="Kembali ke atas">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <footer>
+    <div class="container">
+      <div class="row gy-4 align-items-start">
+        <div class="col-lg-6">
+          <h5 class="text-uppercase mb-3"><i class="fas fa-crosshairs me-2 text-accent"></i> Warzone Arena Batu</h5>
+          <p class="mb-0">
+            Artikel resmi Warzone Arena Batu: strategi, recap event, dan panduan safety. Safety First, Fun Always.
+          </p>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+          <h6 class="text-white mb-2">Navigasi Cepat</h6>
+          <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
+            <a class="btn btn-outline-light rounded-pill px-3 py-2 click-ripple" href="artikel-detail-1.html">Artikel 1</a>
+            <a class="btn btn-outline-light rounded-pill px-3 py-2 click-ripple" href="artikel-detail-2.html">Artikel 2</a>
+            <a class="btn btn-outline-light rounded-pill px-3 py-2 click-ripple" href="artikel-detail-3.html">Artikel 3</a>
+            <a class="btn btn-outline-light rounded-pill px-3 py-2 click-ripple" href="index.html#blog">Kembali ke Blog</a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4" style="border-color: rgba(255,255,255,0.12) !important;" />
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 small">
+        <div>© 2026 <strong>Warzone Paintball Arena Batu</strong>. All Rights Reserved.</div>
+        <div class="text-white-50">File: artikel-detail-2.html</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init({ duration: 750, easing: "ease-out-cubic", once: true, offset: 90 });
+
+    function addRipple(e){
+      const target = e.currentTarget;
+      const rect = target.getBoundingClientRect();
+      const ripple = document.createElement("span");
+      ripple.className = "ripple";
+      const size = Math.max(rect.width, rect.height);
+      ripple.style.width = ripple.style.height = size + "px";
+      ripple.style.left = (e.clientX - rect.left - size/2) + "px";
+      ripple.style.top = (e.clientY - rect.top - size/2) + "px";
+      target.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 700);
+    }
+    document.querySelectorAll(".click-ripple").forEach(el => el.addEventListener("click", addRipple));
+
+    const btnTop = document.getElementById("btnTop");
+    btnTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  </script>
+</body>
+</html>
